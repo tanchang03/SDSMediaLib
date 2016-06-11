@@ -1,0 +1,19 @@
+.MultiUploadImagePanel { 
+	 
+}
+	
+.uploadFormPrePanel ul{
+	list-style: none;
+	padding: 0px;
+}
+.uploadFormPrePanel li{
+	list-style: none;
+	display: inline;
+	float: left;
+	padding: 5px;
+}
+
+.uploadFormPrePanel{
+	overflow-y: auto;
+	overflow-x: hidden;
+}

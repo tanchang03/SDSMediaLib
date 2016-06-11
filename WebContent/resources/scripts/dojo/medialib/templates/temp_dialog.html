@@ -1,0 +1,15 @@
+
+<div class="lotusDialogBorder" role="dialog" aria-labelledby="${id}_title" id="dialog_demo" style="width: 883px;">
+	<form class="lotusDialog lotusForm" action="" method="post" id="account_form">
+	<h1>
+	
+		<div data-dojo-attach-point="titleBar" class="">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="${id}_title"></span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="${buttonCancel}" role="button" tabIndex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="${buttonCancel}">x</span>
+		</span>
+	</div>
+	</h1>
+		<div data-dojo-attach-point="containerNode" class="lotusDialogContent" style="width:height: 800px;"></div>
+	</form>
+</div>

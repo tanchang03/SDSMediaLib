@@ -1,0 +1,112 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+companion files: deprecated.css / deprecatedTheme.css
+companion files: deprecatedRTL.css / deprecatedThemeRTL.css*/
+/************* D E P R E C A T E D   S T Y L E S ******************/
+/*button in left column, set width*/
+/*use lotusBtn, instead*/
+
+.lotusButton{margin-bottom:10px;width:174px;border:1px solid #aaa;text-align:center !important;background-color:#f1f1f1;background-image:-moz-linear-gradient(top, #ffffff 0%, #ebebeb 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebebeb));background-position:top left;color:#000;}
+.lotusButton a{padding:7px 0;font-size:1.3em;border-width:0 1px 1px 1px;border-style:solid;color:#000;border-color:#dedede;display:block;text-decoration:none;font-weight:bold;}
+.lotusButton a:hover, .lotusButton a:focus, .lotusButton a:active{text-decoration:none;}/*gets rid of underline on button hover*/
+
+
+
+
+
+
+
+/*filters used to be part of the header css files*/
+.lotusFilters{margin-top:5px;line-height:1.8em;font-size:.9em}
+.lotusFilters .lotusAction{font-size:1em !important}/*reset action links, they are already .9em*/
+.lotusFilters a.lotusFilter{padding:1px 3px;-moz-border-radius:4px;-webkit-border-radius:4px;text-decoration:none;border:1px solid #eee;background-color:#fafafa;}
+.lotusFilters a.lotusFilter:hover, .lotusFilters a.lotusFilter:focus{text-decoration:none}
+/*to keep them from getting too tall in IE6*/
+.lotusui_ie6 .lotusFilters a{display:inline-block;}
+.lotusui_ie6 .lotusFilters a.lotusFilter{padding:0 5px;line-height:1.6em}
+.lotusFilters a .lotusClose{padding:0 4px;color:#aaa}
+.lotusFilters a:hover .lotusClose{color:#999999}
+.lotusFilters .lotusDivider{padding:0 5px;color:#ccc}
+.lotusFilters .lotusIcon:hover, .lotusFilters .lotusIcon:focus{text-decoration:none}
+
+
+
+
+
+/*** W I D G E T ***/
+
+.lotusWidget{margin:0 5px 10px 10px;border:1px solid #ccc}
+.lotusWidgetPlain{border-width:0}/*the title bar shows up on hover*/
+.lotusWidgetPlain:hover h2, .lotusWidgetPlain:focus h2{display:block}
+.lotusWidget h2, .lotusWidget h3{zoom:1}/*sets hasLayout in IE*/
+.lotusWidget h2{padding:4px 10px 4px 3px;border-bottom:1px solid #ccc;background-color:#f4f4f4;background-image:-moz-linear-gradient(top, #f4f4f4 0%, #eaeaea 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#eaeaea));background-position:left top;background-repeat:repeat-x;overflow:hidden;cursor:move;}
+.lotusWidgetPlain h2{display:none;border-width:1px;border-style:solid;border-color:#ccc}
+.lotusWidget .lotusWidgetBody h2{border-width:0;background-image:none}
+.lotusWidget h2 img{margin-right:3px}
+.lotusWidget h2 .lotusDivider{float:left}
+.lotusWidget h3{padding:4px 10px;overflow:hidden;color:#444;border-bottom:1px solid #eee;line-height:1em;height:1.3em;font-size:1em;font-weight:normal}
+/*.lotusWidget h3 a{padding:4px 0 5px 0}*/
+.lotusWidget h3 a.lotusAction{font-size:.9em;padding:4px 0 5px 0}
+.lotusWidget .lotusWidgetBody{clear:both;padding:3px 0;}
+.lotusWidgetBody .lotusSection {margin-top:0px;}
+.lotusWidgetBody div.lotusChunk{margin-top:5px;clear:both;zoom:1}
+.lotusWidget .lotusWidgetFooter{padding:4px 10px;border-top:1px solid #eee;height:1.3em;clear:both}
+.lotusWidgetFooter ul.lotusVCard {margin-right:95px;margin-top:5px}
+.lotusWidgetFooter img{vertical-align:top}
+.lotusWidget .lotusWidgetSearch{padding:5px 10px 0 10px}
+.lotusWidgetSearch img {padding-left:10px}
+/*paging controls within a widget*/
+.lotusWidget .lotusWidgetFooter .lotusPaging{padding:2px 0;font-size:1em;line-height:1em;border-width:0;background-color:transparent}
+.lotusWidget .lotusPaging div{padding-right:0}
+/*scrolling*/
+.lotusWidget .lotusWidgetScroll{overflow:hidden;clear:both;}
+.lotusWidget .lotusWidgetScroll a{margin:3px auto}
+.lotusImagesOff .lotusWidget .lotusWidgetScroll{overflow:visible;padding-bottom:3px}
+/*action menu icon*/
+.lotusWidget h2 a.lotusIcon{float:left;width:18px;height:18px;background-repeat:no-repeat}/*this is the action menu icon*/
+.lotusImagesOff .lotusWidget h2 a.lotusIcon{font-size:.8em;font-weight:normal;width:auto;height:auto}/*settings for alternate text*/
+.lotusWidget h2 a.lotusActionMenu{background-image:url(../../images/lotusSprite-8bit.png);background-position:3px -1954px}
+.lotusWidget h2 a.lotusActionMenu:hover, .lotusWidget h2 a.lotusActionMenu:focus{background-position:3px -2044px}
+/*add any additional buttons you need to expose here*/
+
+
+
+
+
+/***********************************************************/
+
+
+
+
+/*** L O G I N ***/
+/*this can appear on a plain connections page (gradient background only), or launched in a separate window*/
+
+.lotusLogin .lotusLoginBox{width:619px;margin:20px auto;padding:0;background-position:right top;background-repeat:no-repeat;border:1px solid #bbb;background-color:#fff;}
+.lotusLogin .lotusLogo, .lotusLoginLogo{position:absolute;top:12px;right:22px;white-space:nowrap}/*size values are in the theme file, under general classes.  lotusLoginLogo is deprecated*/
+.lotusLogin .lotusLoginContent{position:relative;padding:20px;zoom:1}
+.lotusLogin .lotusLoginContent img{position:absolute;top:130px;right:40px}
+.lotusLogin .lotusLoginContent img.lotusIcon{position:static;padding-bottom:1px}
+.lotusLogin .lotusLoginForm{margin:100px 220px 0 0;}
+.lotusLogin h1{font-size:2.3em;font-weight:normal;}
+.lotusLogin h2{margin:5px 0 15px 0;font-size:1.4em;font-weight:normal;line-height:1.3em;}
+.lotusLogin .lotusLoginForm input{margin-bottom:5px;}
+.lotusLogin .lotusLoginForm .lotusText{width:15em}
+.lotusLogin .lotusLoginForm .lotusBtnContainer{margin-top:10px}
+.lotusLogin .lotusLoginForm .lotusBtn{margin-left:15px;font-size:inherit}
+.lotusLogin .lotusLoginForm .lotusBtnContainer .lotusAction{display:block;padding-top:3px}
+.lotusLogin .lotusLoginForm div{width:auto;clear:none;margin:0;padding:0;}
+.lotusLogin .lotusLoginForm label{margin-right:0;padding-top:0;display:block;float:none;text-align:right;font-weight:normal;}
+.lotusLogin .lotusDescription{margin-top:30px;clear:right;}
+.lotusLogin .lotusDescription h2{margin-bottom:3px;color:#000}
+/*legal statement adjustments*/
+.lotusLogin div.lotusLegal .lotusLicense{background-position:right top}
+.lotusLogin .lotusLegal{margin-right:10px}
+.lotusLogin table.lotusLegal{margin-top:15px}
+
+
+
+/***********************************************************/
+
+

@@ -1,0 +1,51 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+companion files: deprecated.css / deprecatedTheme.css
+companion files: deprecatedRTL.css / deprecatedThemeRTL.css*/
+/************* D E P R E C A T E D   S T Y L E S ******************/
+/*button in left column, set width*/
+/*use lotusBtn, instead*/
+
+
+
+
+
+.lotusButton a, .lotusButton a:visited{color:#222;}
+
+
+
+
+
+
+
+/*** W I D G E T ***/
+
+
+
+
+
+.lotusWidget{margin:0 0 20px;padding:0;border-width:0;width:auto;}
+.lotusWidget h2{margin-bottom:0;padding:4px 10px 6px 5px;font-size:1em;color:#000;border:1px solid #ccc;background-color:#f4f4f4;box-shadow:#eee 0 3px 5px;-webkit-box-shadow:#eee 0px 3px 5px;-moz-box-shadow:#eee 0 3px 5px;border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;-webkit-border-radius:3px 3px 0 0;}
+.lotusWidget .lotusWidgetBody{margin:0;padding:5px 5px 5px 10px;background-color:#fff;box-shadow:#eee 0 3px 5px;-webkit-box-shadow:#eee 0 3px 5px;-moz-box-shadow:#eee 0 3px 5px;border-width:0 1px 1px 1px;border-style:solid;border-color:#ccc;}
+.lotusWidgetPlain .lotusWidgetBody{border-width:0;box-shadow:none;-webkit-box-shadow:none;
+-moz-box-shadow:none;}
+.lotusWidget .lotusChunk{margin-top:0;margin-bottom:5px}
+.lotusWidget .lotusWidgetFooter .lotusPaging{margin:0;padding:5px 0;}
+
+/***********************************************************/
+
+
+
+
+/*** L O G I N ***/
+/*this can appear on a plain connections page (gradient background only), or launched in a separate window*/
+
+
+
+.lotusLogin .lotusLoginBox{background-image:url(../themeImages/loginBkgd.jpg)}
+
+/***********************************************************/
+
+

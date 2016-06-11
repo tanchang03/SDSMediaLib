@@ -1,0 +1,17 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for breadcrumbs
+companion files: breadcrumbs.css / breadcrumbsTheme.css
+companion files: breadcrumbsRTL.css / breadcrumbsThemeRTL.css*/
+/*** B R E A D C R U M B S ***/
+/*these sit above the page header (lotusHeader)*/
+/*use lotus divider for an image in between breadcrumbs that when clicked shows a drop-down menu, otherwise, just use &gt; between breadcrumbs*/
+
+.lotusBreadcrumbs{margin:0 0 5px 0}
+.lotusBreadcrumbs .lotusDivider{padding:0 5px;background:url(../../images/lotusSprite-8bit.png) 0 -232px no-repeat;text-decoration:none}
+.lotusBreadcrumbs .lotusDivider:hover, .lotusBreadcrumbs .lotusDivider:focus, .lotusBreadcrumbs .lotusDivider:active{background:url(../../images/lotusSprite-8bit.png) 0 -116px;text-decoration:none}
+
+/***********************************************************/
+

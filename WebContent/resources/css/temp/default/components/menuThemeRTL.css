@@ -1,0 +1,29 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for menu
+companion files: menu.css / menuTheme.css
+companion files: menuRTL.css / menuThemeRTL.css*/
+/*** M E N U ***/
+/*this is the green menu found at the top of the left column*/
+/*this menu is set up to allow for rounded corners in all browsers and is a set width*/
+
+
+
+                                                                                                                      
+
+.lotusMenu {width:auto;margin:0 0 25px;padding:0;background-color:transparent;border-width:0;}
+.lotusMenu .lotusMenuSection{margin:0;padding-bottom:0;border-bottom-width:0}
+.lotusMenu h3 a.lotusArrow{margin-left:3px;}
+.lotusMenu ul li a, .lotusMenu ul li a:visited, .lotusMenu h3, .lotusMenu ul.lotusIcons a{margin:0;padding:6px 20px 8px 10px;font-weight:bold;border-width:0;color:#000;}
+.lotusMenu ul li a:hover, .lotusMenu ul li a:focus{color:#000;}
+.lotusMenu li.lotusSelected a, .lotusMenu li.lotusSelected a:visited, .lotusMenu li.lotusSelected a:active, .portlet-menu li.lotusSelected a, .portlet-menu li.lotusSelected a:visited, .portlet-menu li.lotusSelected a:active, .lotusMenu h3.lotusSelected, .portlet-menu h3.lotusSelected{margin:0;padding-right:20px;background-color:#3b506f;background-image:-moz-linear-gradient(#7a8eaf 0, #7a8eaf 1px, #647a9f 1px, #475e7d 50%, #3b506f 50%, #2b3d55 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#7a8eaf), to(#2b3d55), color-stop(.03, #7a8eaf), color-stop(.03, #647a9f), color-stop(50%, #475e7d), color-stop(50%, #3b506f), color-stop(100%, #2b3d55));border-width:1px 0;border-color:#1f3045}
+.lotusMenu ul.lotusIcons a img{display:none}
+.lotusMenu .lotusAction{margin-right:20px;margin-bottom:10px;}
+/*subsection spacing adjustment*/
+.lotusMenu h3, .lotusMenu h3.lotusSelected{padding-right:5px}
+.lotusMenu .lotusMenuSubsection{margin:0;}
+
+/***********************************************************/
+

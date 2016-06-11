@@ -1,0 +1,33 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for drop-down menus
+companion files: actionMenu.css / actionMenuTheme.css
+companion files: actionMenuRTL.css / actionMenuThemeRTL.css*/
+/*****************************/
+/*** A C T I O N   M E N U ***/
+/*****************************/
+
+ul.lotusActionMenu{margin:0;padding:0;list-style-type:none;display:table;position:absolute;top:-9999px;z-index:900px;border:1px solid #aaa;background-color:#fff;box-shadow:5px 5px 5px #eee;-webkit-box-shadow:5px 5px 5px #eee;-moz-box-shadow:5px 5px 5px #eee}
+.lotusui_ie6 .lotusActionMenu{width:15em}
+ul.lotusActionMenu.lotusPlain{background-image:none}
+.lotusActionMenu li{white-space:nowrap;zoom:1;background-color:transparent}
+.lotusui_ie6 .lotusActionMenu li{white-space:normal}/*since we have a fixed width, we have to allow for wrapping*/
+.lotusActionMenu li.lotusSelected a{background-image:url(../../images/lotusSprite-8bit.png);background-position:96% -1078px;background-repeat:no-repeat}
+.lotusActionMenu li.lotusMenuSeparator{border-top :1px solid #C0C1C1}
+.lotusActionMenu a{padding:3px 25px 5px 40px;text-decoration:none;display:block;zoom:1;color:#000}
+.lotusActionMenu .lotusIcon a{padding-right:2px;}
+.lotusActionMenu .lotusIcon img{width:16px;height:16px;margin-left:6px}
+.lotusImagesOff .lotusActionMenu .lotusIcon img{display:inline-block}/*overrides general style that turns these images off - need this to preserve alignment*/
+.lotusActionMenu a:visited, .lotusActionMenu a:hover, .lotusActionMenu a:focus, .lotusActionMenu a:active{text-decoration:none}
+.lotusActionMenu a:hover, .lotusActionMenu a:focus, .lotusActionMenu a:active{color:#fff;background-color:#595b5d}
+.lotusActionMenu.lotusPlain a{padding-right:10px}
+.lotusImagesOff .lotusActionMenu li.lotusSelected a{padding-right:15px}
+.lotusImagesOff .lotusActionMenu a:hover, .lotusImagesOff .lotusActionMenu a:focus{text-decoration:underline}
+
+
+
+
+/***********************************************************/
+

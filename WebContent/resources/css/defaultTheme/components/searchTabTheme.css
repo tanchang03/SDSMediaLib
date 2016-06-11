@@ -1,0 +1,18 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for search tab
+companion files: searchTab.css / searchTabTheme.css
+companion files: searchTabRTL.css / searchTabThemeRTL.css*/
+/*** S E A R C H   T A B ***/
+/*this is the UI for a search/find control that hides the input fields until the user opens them*/
+/*this must be inside a relatively positioned div - override default positioning in the code, if necessary*/
+
+
+
+.lotusSearchForm .lotusSearchButton{color:#000;}
+.lotusSearchTab a, .lotusSearchTab a:visited, .lotusSearchTab a:hover, .lotusSearchTab a:focus, .lotusSearchTab a:active{color:#000;}
+
+/***********************************************************/
+

@@ -1,0 +1,31 @@
+<div class="dojoxLightbox" dojoAttachPoint="containerNode">
+	<div style="position:relative">
+		<div dojoAttachPoint="imageContainer" class="dojoxLightboxContainer" dojoAttachEvent="onclick: _onImageClick">
+			<img dojoAttachPoint="imgNode" src="${imgUrl}" class="dojoxLightboxImage" alt="${title}">
+			<div class="dojoxLightboxFooter" dojoAttachPoint="titleNode">
+				<div class="dijitInline LightboxClose" dojoAttachPoint="closeButtonNode"></div>
+				<div class="dijitInline LightboxNext" dojoAttachPoint="nextButtonNode"></div>	
+				<div class="dijitInline LightboxPrev" dojoAttachPoint="prevButtonNode"></div>
+				<div class="dijitInline" dojoAttachPoint="zoomOutButtonNode"><a href='#'>放大</a></div>
+				<div class="dijitInline" dojoAttachPoint="zoomInButtonNode"><a href='#'>缩小</a></div>
+				<div class="dijitInline" dojoAttachPoint="turnLeftButtonNode"><a href='#'>向左旋转</a></div>
+				<div class="dijitInline" dojoAttachPoint="turnRightButtonNode"><a href='#'>向右旋转</a></div>
+				<div class="dijitInline" dojoAttachPoint="turnRightButtonNode"><a href='#'>下载原图</a></div>
+				<div class="dijitInline" dojoAttachPoint="turnRightButtonNode"><a href='#'>全屏浏览</a></div>
+				<div class="dijitInline" dojoAttachPoint="turnRightButtonNode"><a href='#'>评论</a></div>
+				<div class="dijitInline" dojoAttachPoint="turnRightButtonNode"><a href='#'>分享</a></div>
+				<div class="dijitInline" dojoAttachPoint="turnRightButtonNode"><a href='#'>关注</a></div>
+				
+				
+				
+				<div class="dojoxLightboxText" dojoAttachPoint="titleTextNode">
+					<span dojoAttachPoint="groupCount" class="dojoxLightboxGroupText"></span>
+					<span dojoAttachPoint="textNode">${title}</span><BR/>
+					<span dojoAttachPoint="exifNode"><b>EXIF信息:ISO 感光值</b>	100  <b>EXIF 資訊版本</b>	30,32,32,31  <b>影像拍攝時間</b>	2005:09:25 15:00:18
+					<B>曝光時間</B>	0.00800 (1/125) sec<B>光圈值</B>	F22<B>拍攝模式</B>	光圈優先<B>影像解析度 X</B>	300<B>影像解析度 Y</B>	<B>300解析度單位</B>	dpi</span>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for dialogs
+companion filea: dialogs.css / dialogsTheme.css
+companion filea: dialogsRTL.css / dialogsThemeRTL.css*/
+/*** D I A L O G ***/
+/*this can be wrapped in a dojo dialog, if desired, which gives you the lightbox behavior for free, else, wrap it in a div assigned the class lotusDialogWrapper*/
+
+.lotusDialogWrapper{position:absolute;left:0;top:-9999px;}
+.lotusDialogBorder{min-width:400px;max-width:600px;border:1px solid #999;box-shadow:0 3px 7px #999;-moz-box-shadow:0 3px 7px #999;-webkit-box-shadow:0 3px 7px #999;}
+.lotusui_ie6 .lotusDialogBorder{width:expression(this.offsetWidth > 600 ? "600px" : "auto" );}
+.lotusDialog{opacity:1;height:auto;background-color:#fff;}
+.lotusDialog h1{font-weight:bold;padding:12px 12px 12px 20px;background-color:#fff;background-image:none;background-image:-moz-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f0f0f0));background-position:left top;border-bottom:1px solid #eee;}
+.lotusDialog h2{font-weight:bold;padding:12px 12px 12px 20px;margin:0 !important/*so it doesn't pick up the margins from lotusForm*/}
+.lotusDialog h1 .lotusClose, .lotusDialog h2 .lotusClose{float:right;font-size:.7em}
+.lotusImagesOff .lotusClose{font-size:1em}
+.lotusDialog .lotusText{width:97%}
+.lotusDialog .lotusFormTable, .lotusDialog .lotusFormTable td, .lotusDialog .lotusDialogContent{background-color:#fff;}
+.lotusDialog .lotusDialogContent{padding:20px 12px 20px 20px;border-bottom:1px solid #aaa;max-height:300px;overflow:auto;}
+.lotusui_ie .lotusDialog .lotusDialogContent{position:relative;}/*position:relative is needed to make sure relatively positioned elements within a scrolled div scroll properly - otherwise they act like fixed-position elements. */
+.lotusui_ie6 .lotusDialog .lotusDialogContent, .lotusui_ie7 .lotusDialog .lotusDialogContent{padding-right:20px;overflow-x:hidden}/*to keep horizontal scrollbar from appearing*/
+.lotusui_ie6 .lotusDialog .lotusDialogContent {height:expression(this.scrollHeight > 399 ? "400px" : "auto");width:expression(this.offsetWidth > 560 ? "560px" : "auto" );}/*width is to keep scrollbar looking proper with dialog header and footer*/
+.lotusDialog .lotusDialogFooter{padding:12px 12px 12px 20px;background-color:#eee;}
+.lotusDialog td.lotusFormLabel{vertical-align:top;}
+.lotusDialog ul li{margin-bottom:3px;list-style:none;}
+.lotusui_ie .lotusDialogFooter .lotusAction{vertical-align:super}/*fixes alignment of cancel link*/
+
+/*for lightbox*/
+.lotusOverlay{display:none;position:absolute;top:0;left:0;width:100%;background-color:black;opacity:.30;filter: alpha(opacity=30);}
+
+
+
+
+
+/***********************************************************/
+

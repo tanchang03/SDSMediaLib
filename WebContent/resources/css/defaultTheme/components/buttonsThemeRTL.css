@@ -1,0 +1,23 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for buttons
+companion files: buttons.css / buttonsTheme.css
+companion files: buttonsRTL.css / buttonsThemeRTL.css*/
+/*** B U T T O N S ***/
+
+
+
+
+
+.lotusBtn, .lotusFormButton, .lotusBtnImg{border-width:0}
+.lotusBtn a, .lotusBtn a:visited, input.lotusBtn, button.lotusBtn, input.lotusFormButton, button.lotusFormButton, .lotusBtnImg{padding:2px 8px 4px;border:1px solid #aaa;-moz-border-radius:2px;border-radius:2px;-webkit-border-radius:2px;color:#000;}
+.lotusBtnImg{padding:3px}/*reset back to what it should be*/
+span.lotusBtn a{padding:2px 8px 4px}
+.lotusBtn a:hover, .lotusBtn a:focus, .lotusBtn a:active, .lotusButton a:hover, input.lotusBtn:hover, input.lotusBtn:focus, button.lotusBtn:hover, button.lotusBtn:focus{border:1px solid #666}
+.lotusBtnDisabled{border-color:#ccc !important;}/*we don't want disabled button border color to change on hover*/
+.lotusBtnDisabled a, .lotusBtnDisabled a:visited, input.lotusBtnDisabled, button.lotusBtnDisabled{color:#b0b0b0 !important;background-color:#eee;}
+
+/***********************************************************/
+

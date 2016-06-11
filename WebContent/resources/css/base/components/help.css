@@ -1,0 +1,33 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for help and tips
+companion files: help.css / helpTheme.css
+companion files: helpRTL.css / helpThemeRTL.css*/
+/*** I N F O   B O X ***/ 
+/*this is used for help and tips*/
+
+.lotusInfoBox, .portlet-msg{margin:15px 0 5px 0;padding:5px;-moz-border-radius:2px;-webkit-border-radius:2px;overflow:hidden;zoom:1;background-color:#fffabc;border:1px solid #ccc;}
+.lotusInfoBox.lotusFirst{margin-top:0}/*this style definition (with no spaces) applies to any div with class="lotusInfoBox lotusFirst"*/
+.lotusInfoBox h3, .portlet-msg h3{margin:5px 0 10px 0;padding:0 0 0 5px;overflow:hidden;zoom:1;}
+.lotusInfoBox h3 img, .portlet-msg h3 img{margin:3px 5px 0 0;width:8px;height:8px;background-image:url(../../images/lotusSprite-8bit.png);background-position:-2px -2321px;opacity:0.25;filter:alpha(opacity=25)}
+.lotusInfoBox h3 a:hover img, .portlet-msg h3 a:hover img, .lotusInfoBox h3 a:focus img, .portlet-msg h3 a:focus img{opacity:0.40;filter:alpha(opacity=40);}
+.lotusSection .lotusInfoBox h3 span.lotusLeft{width:auto}/*h3 tags in a section are set to 90% width - need to reset*/
+.lotusInfoBox h4, .portlet-msg h4{margin:2px 5px;font-weight:bold}
+.lotusInfoBox p, .portlet-msg p{margin:0;padding:5px;}
+.lotusInfoBox ul, .portlet-msg ul{margin-top:5px;}
+.lotusInfoBox .lotusInlinelist, .portlet-msg .lotusInlinelist{padding-bottom:5px;padding-left:0;}
+.lotusInfoBox .lotusInlinelist li, .portlet-msg .lotusInlinelist li{padding-bottom:5px;border-left-width:0;}
+/*put lotusHelp as an additional style to lotusInfoBox for help popups*/
+.lotusHelp{position:absolute;width:200px;left:0;top:-9999px;box-shadow:0 2px 5px #eee;-webkit-box-shadow:0 2px 5px #eee;-moz-box-shadow:0 2px 5px #eee}
+.lotusHelp .lotusInfoBox{margin:0;-moz-border-radius:0;-webkit-border-radius:0;background-color:#ffffe1;}
+.lotusHelp h3{margin:4px 3px 0 0;float:left;}
+.lotusMedium{width:300px}/*you can put this as an additional class to set the width to 300 pixels*/
+
+
+
+
+
+/***********************************************************/
+

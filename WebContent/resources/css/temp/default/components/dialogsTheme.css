@@ -1,0 +1,19 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for dialogs
+companion filea: dialogs.css / dialogsTheme.css
+companion filea: dialogsRTL.css / dialogsThemeRTL.css*/
+/*** D I A L O G ***/
+/*this can be wrapped in a dojo dialog, if desired, which gives you the lightbox behavior for free, else, wrap it in a div assigned the class lotusDialogWrapper*/
+
+
+
+
+
+.lotusDialog .lotusDialogFooter{background-color:#eaecee;}
+.lotusDialogBorder{border: 1px solid #999;box-shadow:0 3px 7px #999;-moz-box-shadow:0 3px 7px #999;-webkit-box-shadow:0 3px 7px #999;}
+
+/***********************************************************/
+

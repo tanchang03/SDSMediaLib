@@ -1,0 +1,23 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for the title bar (layout)
+companion files: titlebar.css / titlebarTheme.css
+companion files: titlebarRTL.css / titlebarThemeRTL.css*/
+/*** T I T L E   B A R 	***/
+/*the blue bar under the , that contains tabs and search UI*/
+
+
+
+.lotusTitleBar{background-color:#4586d3;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -1800px;border-bottom-color:#6794cb;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0}
+.lotusTitleBar .lotusRightCorner{padding-right:6px;background-image:url(../themeImages/titlebarRight.png);background-position:right top;background-repeat:no-repeat}
+.lotusTitleBar .lotusInner{background-image:url(../themeImages/titlebarLeft.png);background-position:left top;background-repeat:no-repeat}
+.lotusTitleBar .lotusSearch .lotusText, .lotusTitleBar .lotusSearch .lotusScope, .lotusTitleBar .lotusSearch .lotusBtnImg, .lotusTitleBar .lotusTabs li{border-color:#4675AD;}
+.lotusTitleBar .lotusTabs li{border-bottom-color:#6794cb;background-color:#4372A9}
+.lotusTitleBar .lotusTabs li.lotusSelected{border-color:#4675AD;border-bottom-color:#fff;}
+
+
+
+/***********************************************************/
+

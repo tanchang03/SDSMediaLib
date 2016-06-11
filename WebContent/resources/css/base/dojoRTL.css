@@ -1,0 +1,200 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+this file contains layout style adjustments for dojo widgets
+they override/add to the styles in dijit.css
+companion files: dojo.css / dojoTheme.css
+companion files: dojoRTL.css / dojoThemeRTL.css*/
+/******************************/
+/*** D O J O   S T Y L E S ****/
+/******************************/
+
+/*** A C T I O N   M E N U S    A N D   T Y P E   A H E A D ***/
+/*this is the dojo version of our action menus*/
+
+.dijitMenu{border:1px solid #919090 !important;/*need !important because dijitReset comes after dijitMenu in the list of classes*/}
+.dijitMenuTable{background-color:#fff}
+.dijitMenuItem td{white-space:nowrap;padding:2px 0;}
+.dijitMenuItemIcon{width:25px;height:16px;background-position:center center}
+.dijitMenuItemLabel{padding-left:5px !important;padding-right:5px !important;}
+.dijitMenuSeparatorTop{margin-top:0;border-bottom:1px solid #C0C1C1;}
+.dijitMenuSeparatorBottom{margin-bottom:0;border:0;}
+/*menu icon classes*/
+.dijitMenu .lotusCheckmark{background:url(../images/lotusSprite-8bit.png) 96% -1078px no-repeat}
+/*type ahead styles*/
+ul.dijitMenu{border-color:#999 !important}
+
+
+
+
+
+/***********************************************************/
+
+/*** C A L E N D A R / D A T E   P I C K E R ***/
+
+.dijitCalendarContainer{border-collapse:collapse;border:1px solid #ccc;background-color:#fff;width:160px;font-size:1em}
+.dijitCalendarContainer thead{background-color:#eee;}
+.dijitCalendarContainer thead tr th{text-align:center;padding:1px}
+.dijitCalendarContainer tbody tr td{text-align:center;border-width:0;width:12%;}
+.dijitCalendarContainer tfoot tr td{text-align:center}
+.dijitCalendarContainer .dijitCalendarMonth{font-weight:bold;text-align:center}
+.dijitCalendarSelectedDate .dijitCalendarDateLabel{font-weight:bold;}
+.dijitCalendarPreviousMonth .dijitCalendarDateLabel, .dijitCalendarNextMonth .dijitCalendarDateLabel{color:#ccc;}
+.dijitCalendarCurrentMonth .dijitCalendarDateLabel{color:#000;}
+.dijitCalendarBodyContainer .dayFlagPersonalTask,
+.dijitCalendarBodyContainer .dayFlagTeamTask,
+.dijitCalendarBodyContainer .dayFlagOverdueTask,
+.dijitCalendarBodyContainer .dayFlagTodayTask{border-bottom:1px solid #fff;border-right:1px solid #fff;cursor:pointer;cursor:hand;}
+.dijitCalendarBodyContainer .dayFlagPersonalTask{background-color:#c7e1fa;}
+.dijitCalendarBodyContainer .dayFlagTeamTask{background-color:#ccffaa;}
+.dijitCalendarBodyContainer .dayFlagOverdueTask{background-color:#f99;}
+.dijitCalendarBodyContainer .dayFlagTodayTask{background-color:#ffa;}
+.dijitCalendarYearLabel{background-color:#eee;}
+.dijitCalendarYearLabel .dijitCalendarSelectedYear{color:#999;}
+.dijitCalendarYearLabel .dijitCalendarPreviousYear, 
+.dijitCalendarYearLabel .dijitCalendarSelectedYear,
+.dijitCalendarYearLabel .dijitCalendarNextYear{margin-right:4px;margin-left:4px;}
+.dijitCalendarYearLabel .dijitCalendarSelectedYear{cursor:default;}
+.dijitCalendarContainer .dijitCalendarIncrementControl{width:15px;height:15px;font-size:16px;margin:0 3px;}
+.dijitCalendarContainer .dijitCalendarIncrease, .dijitCalendarContainer .dijitCalendarDecrease{cursor:pointer;cursor:hand;}
+.dijitCalendarContainer .dijitCalendarIncrease{padding-left:16px;background:transparent url(../images/calArrowLeft.png) left 3px no-repeat;}
+.dijitCalendarContainer .dijitCalendarDecrease{padding-right:16px;background:transparent url(../images/calArrowRight.png) right 3px no-repeat}
+.dijitCalendarIncrease .dijitCalendarIncreaseInner, .dijitCalendarDecrease .dijitCalendarDecreaseInner{display:none;}
+.dijitCalendarYearContainer h3.dijitCalendarYearLabel{margin-bottom:0;}
+/*show +/- in high contrast mode, and try to align them better in browsers that cooperate*/
+.dijit_a11y .dijitCalendarIncrease, .dijit_a11y .dijitCalendarDecrease{border-color:#999}/*for an outline, when images are turned off*/
+.dijit_a11y .dijitCalendarIncrease .dijitCalendarIncreaseInner, .dijit_a11y .dijitCalendarDecrease .dijitCalendarDecreaseInner{display:inline;display:inline-block;margin-top:-8px;}
+.dijit_a11y .dijitCalendarDecrease .dijitCalendarDecreaseInner{margin-top:-10px;margin-right:-10px}
+.dijitCalendarContainer .dijitA11ySideArrow{display:none}
+
+
+
+/***********************************************************/
+
+
+/*** D I A L O G ***/
+/*see dialog component for additional classes. The dojo dialog is just used as a wrapper for our lotusDialog, which can be used independently of dojo*/
+.dijitContentPane{overflow:visible}
+/***********************************************************/
+
+/*** D I S A B L E D   E L E M E N T S ***/
+.dijitButtonDisabled .dijitButtonNode, .dijitToggleButtonDisabled .dijitButtonNode, .dijitDropDownButtonDisabled .dijitButtonNode, .dijitComboButtonDisabled .dijitButtonNode, .dijitComboBoxDisabled, .dijitSpinnerDisabled, .dijitSpinnerDisabled .dijitButtonNode {
+opacity:0.6;
+}
+.dijitSliderDisabled *, .dijitDisabledClickableRegion, .dijitSpinnerDisabled *, .dijitButtonDisabled *, .dijitDropDownButtonDisabled *, .dijitComboButtonDisabled *, .dijitComboBoxDisabled * {
+cursor:not-allowed !important;
+}
+/***********************************************************/
+
+/*** I N P U T   F I E L D S ***/
+.dijitTextBox, .dijitTextBox input, .dijitComboBox input, .dijitSpinner input{background-color:#fff !important;}
+.dijitTextBox,.dijitComboBox,.dijitSpinner{border-color:#A5AEB5;}
+/***********************************************************/
+
+
+/*** R I C H   T E X T   E D I T O R ***/
+
+.dijitIEFixedToolbar{position:absolute;top: expression(eval((document.documentElement||document.body).scrollTop));}
+.dijitToolbar .dijitToolbarSeparator{background-image:url(../images/DojoEditorToolbar_rtl.png);}
+.RichTextEditable .dijitEditorIcon{background-image:url(../images/DojoEditorToolbar_rtl.png);background-repeat:no-repeat;width:18px;height:18px;text-align:center;}
+.dijitEditorIconSep{background-position:0px;}
+.dijitEditorIconBackColor{background-position:-18px;}
+.dijitEditorIconBold{background-position:-36px;}
+.dijitEditorIconCancel{background-position:-54px;}
+.dijitEditorIconCopy{background-position:-72px;}
+.dijitEditorIconCreateLink{background-position:-90px;}
+.dijitEditorIconCut{background-position:-108px;}
+.dijitEditorIconDelete{background-position:-126px;}
+.dijitEditorIconForeColor{background-position:-144px;}
+.dijitEditorIconHiliteColor{background-position:-162px;}
+.dijitEditorIconHTML{background-position:-702px;}
+.dijitEditorIconIndent{background-position:-180px;}
+.dijitEditorIconInsertHorizontalRule{background-position:-198px;}
+.dijitEditorIconInsertImage{background-position:-216px;}
+.dijitEditorIconInsertOrderedList{background-position:-234px;}
+.dijitEditorIconInsertTable{background-position:-252px;}
+.dijitEditorIconInsertUnorderedList{background-position:-270px;}
+.dijitEditorIconItalic{background-position:-288px;}
+.dijitEditorIconJustifyCenter{background-position:-306px;}
+.dijitEditorIconJustifyFull{background-position:-324px;}
+.dijitEditorIconJustifyLeft{background-position:-342px;}
+.dijitEditorIconJustifyRight{background-position:-360px;}
+.dijitEditorIconLeftToRight{background-position:-378px;}
+.dijitEditorIconListBulletIndent{background-position:-396px;}
+.dijitEditorIconListBulletOutdent{background-position:-414px;}
+.dijitEditorIconListNumIndent{background-position:-432px;}
+.dijitEditorIconListNumOutdent{background-position:-450px;}
+.dijitEditorIconOutdent{background-position:-468px;}
+.dijitEditorIconPaste{background-position:-486px;}
+.dijitEditorIconRedo{background-position:-504px;}
+.dijitEditorIconRemoveFormat{background-position:-522px;}
+.dijitEditorIconRightToLeft{background-position:-540px;}
+.dijitEditorIconSave{background-position:-558px;}
+.dijitEditorIconSpace{background-position:-576px;}
+.dijitEditorIconStrikethrough{background-position:-594px;}
+.dijitEditorIconSubscript{background-position:-612px;}
+.dijitEditorIconSuperscript{background-position:-630px;}
+.dijitEditorIconUnderline{background-position:-648px;}
+.dijitEditorIconUndo{background-position:-666px;}
+.dijitEditorIconWikiword{background-position:-684px;}
+.dijitEditorIconToggleDir{background-position:-540px;}
+.RichTextEditable .dijitButton,
+.RichTextEditable .dijitDropDownButton,
+.RichTextEditable .dijitComboButton{margin:0;}
+.RichTextEditable .dijitButtonNode{border:0;margin:0;padding:.1em;line-height:normal;cursor:pointer;cursor:hand;vertical-align:middle;text-align:center;}
+.RichTextEditable .dijitButtonNode, .RichTextEditable button{background-color:transparent;}
+.RichTextEditable .dijitToolbar{background-position:right top;background-repeat:repeat-x;border-bottom-width:1px;border-bottom-style:solid;}
+.RichTextEditable{border:1px solid #999;background-color:#fff}
+.RichTextEditable .dijitButtonNode .dijitArrowButtonInner{width:10px;background-image:url(../images/btnDropDown.png);}
+/*to support hover and checked states*/
+/*?*/
+.RichTextEditable .dijitToolbar .dijitButtonHover,
+.RichTextEditable .dijitToolbar .dijitToggleButtonHover,
+.RichTextEditable .dijitToolbar .dijitDropDownButtonHover{background-color:#abc1e5;border:1px solid #316ac5 !important}
+.RichTextEditable .dijitToolbar .dijitButtonChecked, 
+.RichTextEditable .dijitToolbar .dijitToggleButtonChecked{background-color:#D4DFF2;border:1px solid #316AC5 !important;}
+/*keeps UI from shifting as buttons are rolled over in LTR mode.  Not needed for RTL mode.*/
+/*.RichTextEditable .dijitToolbar .dijitButton,
+.RichTextEditable .dijitToolbar .dijitToggleButton, 
+.RichTextEditable .dijitToolbar .dijitDropDownButton { margin: 1px; padding: 0px; border:1px solid transparent; }
+.RichTextEditable .dijitToolbar .dijitButtonChecked, 
+.RichTextEditable .dijitToolbar .dijitToggleButtonChecked {margin:1px !important;padding:0 !important;}*/
+
+
+
+/***********************************************************/
+
+/*** S L I D E R ***/
+
+.dijitSliderProgressBar{background-color:#aaa;}
+.dijitSlider .dijitSliderImageHandle{border:0;background-position:left bottom;background-repeat:no-repeat;width:10px;height:11px;}
+.dijit_a11y div.dijitSliderImageHandle, .dijitSliderImageHandle{background-image:url(../images/tagSliderHandle.png)}
+.dijitSliderRemainingBar{background-color:#eee;}
+.dijitSliderBottomBumper, .dijitSliderLeftBumper{background-color:#a5c0ec;}
+.dijitSlider .dijitSliderImageHandleH{top:-3px;}
+.dj_ie6 .dijitSlider .dijitSliderImageHandleH{top:-8px}
+.dijitSlider .dijitSliderBar{border-style:none;}
+.dijit_a11y .dijitSlider .dijitSliderBar{border-bottom-style:solid;border-bottom-width:5px}
+.dijitSlider .dijitSliderBumperH{width:2px;}
+.dijitSlider .dijitButtonNode{display:none;}
+.dj_ie .dijit_a11y div.dijitSliderImageHandle, .dj_ie .dijitSliderImageHandle{background-position:right top;}
+
+
+
+/***********************************************************/
+
+/*** T O O L T I P ***/
+
+.dijitTooltipContainer{background-color:#f0f0f0;border:1px solid #c5c5c5;background-repeat:repeat-x;}
+
+
+
+/***********************************************************/
+
+
+/*** T Y P E   A H E A D    A N D   P O P U P S ***/
+.dijitPopup ul.dijitMenu{margin:0}/*fixes alignment of typeahead*/
+.dijitPopup .lotusHelp {position: relative; left: 0; top: 0; width: auto;}/*to keep positioning styles from breaking when using lotusHelp in conjunction with dijitPopup*/
+/***********************************************************/
+

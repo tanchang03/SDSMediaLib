@@ -1,0 +1,20 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for help and tips
+companion files: help.css / helpTheme.css
+companion files: helpRTL.css / helpThemeRTL.css*/
+/*** I N F O   B O X ***/ 
+/*this is used for help and tips*/
+
+
+
+
+
+/*----------------------INFO BOX------------------------*/
+.lotusColLeft .lotusInfoBox, .lotusColRight .lotusInfoBox{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
+.lotusHelp .lotusInfoBox{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;background-color:#fff}
+
+/***********************************************************/
+

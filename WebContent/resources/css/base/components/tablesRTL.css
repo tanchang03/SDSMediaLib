@@ -1,0 +1,66 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for tables
+companion files: tables.css / tablesTheme.css
+companion files: tablesRTL.css / tablesThemeRTL.css*/
+/*** T A B L E S ***/
+/*layout table*/
+/*note, if you need to use the structure of a relative div containing an absolute div within a layout table, be aware that Safari will only show the portion of your absolute div that is within the table area.  This is by design.*/
+/*there is no cellpadding built into these tables. Used judiciously for complex layouts.*/
+/*using child descenders to scope styles only to the layout table and not any nested tables*/
+
+.lotusLayout td{padding:0;vertical-align:top;text-align:right;} /*default alignment*/
+.lotusLayout td.lotusvAlignMid{vertical-align:middle}/*allows you to override default alignment*/
+/*used for presenting information in a vertical format*/
+.lotusVertTable th, .lotusVertTable td{padding:2px}
+.lotusVertTable th{padding-left:50px;text-align:right;vertical-align:top;font-weight:normal;color:#666;}
+.lotusVertTable p{margin:0}
+/*entry/data table*/
+.lotusTable{width:100%;border-collapse:collapse;border-bottom-color:#eee;}
+.lotusTable th, .lotusTable td{padding:5px 2px;vertical-align:top;text-align:right;font-weight:normal;}
+.lotusTable th.lotusSubHeader{padding-top:15px}/*wrap an h4 tag in a th tag that spans the table columns for a subheader*/
+.lotusTable .lotusFirst th.lotusSubHeader{padding-top:5px}
+.lotusTable .lotusSummary td{padding:5px 2px 0 2px}
+.lotusTable .lotusDetails td, .lotusTable .lotusMore td{padding:0 2px 5px 2px}
+.lotusTable td p:first-child, p.lotusFirst{margin-top:0}/*for IE6, you have to assign the class lotusFirst to the first paragraph*/
+.lotusTable td, .lotusTable th.lotusRowHeader, .lotusTable th.lotusSubHeader{border-top:1px solid #eee}/*use lotusRowHeader as a class on a th tag for a header that is the first cell of a row*/
+.lotusTable .lotusLast td, .lotusTable .lotusLast th.lotusRowHeader{border-bottom:1px solid #eee}/*this give the option of a border under the last table row*/
+
+.lotusTable .lotusDetails td, .lotusTable .lotusFirst td, .lotusTable .lotusMore td, .lotusTable .lotusFirst th.lotusRowHeader, .lotusTable .lotusFirst th.lotusSubHeader{border-top-width:0}
+.lotusTable th.lotusFirstCell, .lotusTable td.lotusFirstCell{padding-right:10px}
+.lotusTable th.lotusLastCell, .lotusTable td.lotusLastCell{padding-left:10px }
+.lotusTable .lotusAltRow td, .lotusTable .lotusAltRow th.lotusRowHeader{background-color:#fafafa;}
+.lotusTable th.lotusAltCell, .lotusTable td.lotusAltCell{background-color:#fafafa;border-width:0 0 1px 1px;border-style:solid;border-left-color:#fff;border-bottom-color:#fff;}
+
+.lotusTable .lotusSS{font-size:.9em;white-space:nowrap;width:30px;color:#666;}
+.lotusTable .lotusType{margin-right:5px;padding:0;font-weight:normal;font-size:.75em;color:#666;}/*allows you to add an image and text inside a header to indicate the type of entry - requires an additional class*/
+/*h4 tags are used for entry titles*/
+.lotusTable h4.lotusComplete, .lotusTable h4.lotusComplete a{text-decoration:line-through;color:#666} /*for to do items*/
+/*h5 tags are used for subsections in entry details*/
+.lotusTable h5{margin:12px 0 2px 0;}
+/*when the h4 tag occurs in the details row (like in notifications), we need some bottom margin*/
+.lotusTable .lotusDetails h4{margin-bottom:2px}
+.lotusTable .lotusDivider{padding:0 5px}
+.lotusui_ie .lotusTable .lotusDivider{display:inline-block;}
+.lotusTable .lotusFirstCell input{margin:3px 0 0 0}
+.lotusui_ie .lotusTable .lotusFirstCell input{margin:0}
+.lotusTable .lotusPaging td, .portlet-table .lotusPaging td{border-color:#eee;}
+.lotusTable .lotusMeta{font-size:.9em}
+.lotusTable .lotusActions{white-space:nowrap}/*fix for Safari*/
+/*this table also shows up at the top of the UI, for announcements.*/
+.lotusInfoTable{margin:0 0 12px 0;-moz-border-radius:2px;-webkit-border-radius:2px;background-color:#f0f0f0;border:1px solid #ccc;}
+.lotusInfoTable h2{position:relative;zoom:1;}
+.lotusInfoTable th, .lotusInfoTable td{padding:5px 10px}
+.lotusInfoTable .lotusClose{position:absolute;left:-5px;top:0;display:block;padding:2px;}
+.lotusInfoTable .lotusClose img{width:12px;height:12px;background-image:url(../../images/lotusSprite-8bit.png);background-position:0 -2319px;opacity:0.25;filter:alpha(opacity=25);}
+.lotusInfoTable .lotusClose:hover img, .lotusInfoTable .lotusClose:focus img{opacity:0.40;filter:alpha(opacity=40)}
+.lotusui_ie6 .lotusInfoTable .lotusClose{font-size:12px}/*preserves the height of the close button when the font size is made larger*/
+
+
+
+
+
+/****************************************************************/
+

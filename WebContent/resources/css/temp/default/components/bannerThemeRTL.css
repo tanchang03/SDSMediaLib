@@ -1,0 +1,56 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for the banner (layout)
+companion files: banner.css / bannerTheme.css
+companion files: bannerRTL.css / bannerThemeRTL.css*/
+/*** B A N N E R **/
+/*this is the very top of the UI, that contains the logo, application links, user name, login/logout*/
+
+
+
+.lotusBanner ul.lotusInlinelist li{border-width:0}
+.lotusBanner ul.lotusUtility a, .lotusBanner ul.lotusUtility a:visited, .lotusBanner ul.lotusUtility a:active, .lotusBanner ul.lotusUtility a:hover{color:#eee}
+.lotusBanner ul.lotusLinks a, .lotusBanner ul.lotusLinks a:visited, .lotusBanner ul.lotusLinks a:active, .lotusBanner ul.lotusLinks a:hover{color:#eee}
+.lotusBanner ul.lotusLinks li.lotusSelected{background-color:transparent;}
+
+
+
+
+
+.lotusBanner{padding:0 10px;background-color:#000;background-image:-moz-linear-gradient(top, #525252 0%, #000000 100%);-webkit-gradient(linear, left top, left bottom, from(#525252), to(#000000));}
+.lotusBanner .lotusLogo{margin-right:5px;margin-top:8px}
+.lotusui_ie6 .lotusBanner .lotusLogo{margin-top:6px;}
+.lotusBanner ul.lotusInlinelist li{margin:0}
+.lotusBanner ul.lotusInlinelist li a, .lotusBanner ul li span.lotusUser{border-width:1px 1px 0 1px;border-style:solid;border-color:transparent;color:#eee;font-weight:bold;}
+.lotusui_ie6 .lotusBanner ul.lotusInlinelist li a, .lotusui_ie6 .lotusBanner ul li span.lotusUser{border-color:#000;}
+.lotusBanner ul.lotusInlinelist li.lotusHover a{border-color:#000;background-color:#fff;color:#000;text-decoration:none}
+.lotusui_ie6 .lotusBanner ul.lotusInlinelist li.lotusHover a{color:#000 !important;}
+.lotusBanner ul.lotusLinks li.lotusSelected a{text-decoration:none}
+.lotusBanner ul li a{border-bottom-width:0;padding:6px 10px;}
+.lotusBanner ul.lotusUtility li a, .lotusBanner ul li span.lotusUser{border-bottom-width:0;padding:6px 5px;}
+/*fixes IE6 alignment issues, now that we have arrow icons in some of the items*/
+.lotusui_ie .lotusBanner ul.lotusInlinelist li a, .lotusui_ie .lotusBanner ul li span.lotusUser{line-height:1.3em;}
+
+/* temporary override to fix menu in banner */
+.lotusui .lotusBanner .lotusDropDownSprite{background-position:0 -814px}
+.lotusui .lotusBanner .lotusHover .lotusDropDownSprite{background-position:0 -728px}
+
+
+
+/***********************************************************/
+
+
+/*****************************/
+/*** N A V I G A T I O N   M E N U ***/
+/*****************************/
+
+
+
+
+
+.lotusNavMenu{margin:0;border-top-width:0;border-color:#000}
+
+/***********************************************************/
+

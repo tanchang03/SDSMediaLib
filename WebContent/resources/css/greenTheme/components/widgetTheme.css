@@ -1,0 +1,20 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for widget
+companion files: widget.css / widgetTheme.css
+companion files: widgetRTL.css / widgetThemeRTL.css*/
+/*** W I D G E T ***/
+
+
+
+.lotusWidget .lotusWidgetBody{border-color:#E8ECEE;}
+.lotusWidget h2{border-color:#E8ECEE;background-color:#E8ECEE;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -900px;}
+.lotusWidgetPlain h2{border-width:1px 1px 0 1px}
+.lotusWidget h3, .lotusWidget .lotusWidgetFooter{border-color:#e8ecee;}
+
+
+
+/***********************************************************/
+

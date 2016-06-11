@@ -1,0 +1,32 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for the title bar (layout)
+companion files: titlebar.css / titlebarTheme.css
+companion files: titlebarRTL.css / titlebarThemeRTL.css*/
+/*** T I T L E   B A R 	***/
+/*the blue bar under the , that contains tabs and search UI*/
+
+.lotusTitleBar{background-color:#747678;position:relative;clear:both/*fix for IE6*/;border-bottom:1px solid #747678;background-image:-moz-linear-gradient(top, #87898b 0%, #656769 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#87898b), to(#656769));border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0;zoom:1}
+.lotusTitleBar .lotusInner{height:3em;width:100%}
+.lotusTitleBar h2{padding:10px 0 0 15px;float:left;font-size:1.5em;letter-spacing:0;width:200px;font-weight:normal;color:#fff;} /*this is used in place of tabs, if desired*/
+.lotusTitleBar .lotusTabs, .lotusTitleBar .portlet-tab{left:215px}/*override this positioning in your custom css file if you don't use an appliacation title*/
+.lotusTitleBar .lotusSearch .lotusText, .lotusTitleBar .lotusSearch .lotusScope, .lotusTitleBar .lotusSearch .lotusBtnImg, .lotusTitleBar .lotusTabs li{border:1px solid #747678;}
+.lotusTitleBar .lotusTabs li, .lotusTitleBar .lotusSearch .lotusBtnImg{background-color:#595b5d;}
+.lotusTitleBar .lotusTabs li{padding-left:5px;border-bottom-color:#656769;}
+.lotusTitleBar .lotusSearch{position:absolute;top:.7em;right:10px}  
+.lotusTitleBar .lotusTabs a, .lotusTitleBar .lotusTabs a:visited{display:block;padding:7px 10px 7px 7px;text-decoration:none;line-height:1em;background-position:top right;background-repeat:no-repeat;line-height:1em;color:#fff;}/*line-height is for IE, to keep the selected tab sitting on top of the border when there is a drop-down image in the tab*/
+.lotusTitleBar .lotusTabs li.lotusSelected{background-color:#fff;border-bottom:1px solid #fff}
+.lotusTitleBar .lotusTabs li.lotusSelected a, .lotusTitleBar .lotusTabs li.lotusSelected a:visited{color:#000;}
+.lotusTitleBar .lotusTabs li a:hover, .lotusTitleBar .lotusTabs li a:focus, .lotusTitleBar .lotusTabs li a:active{color:#fff !important}
+.lotusTitleBar .lotusTabs li.lotusSelected a:hover, .lotusTitleBar .lotusTabs li.lotusSelected a:focus, .lotusTitleBar .lotusTabs li.lotusSelected a:active{color:#000 !important}
+/*accessibility*/
+.lotusTitleBar .lotusSearchButton{color:#fff}
+
+
+
+
+
+/***********************************************************/
+

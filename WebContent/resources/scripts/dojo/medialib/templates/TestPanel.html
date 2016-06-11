@@ -1,0 +1,71 @@
+
+<div class="TestPanel" style="margin-top: 0px;padding-top: 0px;">
+	<table class="lotusFormTable uploadFormTable" role="presentation" bgcolor="" cellpadding="0" cellspacing="0" border="0" summary="" width="100%" height="600px">
+		<tr height="20px">
+			<td colspan="2">
+				<div style="float:left;width: 120px;">
+					<input name="uploadedfile" multiple="true" type="file" data-dojo-type="dojox.form.Uploader" label="选择上传文件" id="uploader" />
+				</div>
+				<div style="">
+					选择文件时按住Ctrl键可以同时选择多个图片文件，可上传大小不超过500K的图片文件<br/>
+也可直接将需要上传的文件拖入待上传窗口
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="600px;">
+				<div class="uploadFormPrePanel" data-dojo-attach-point="imagePrePanelNode">
+					
+				</div>
+			</td>
+			<td>
+				<div class="uploadFormCatalog">
+					<div style="border-bottom:1px #efefef solid;font-weight:bold">图片分类</div>
+					<div>
+						<div>
+							>>一级分类
+						</div>
+						<div class="uploadFormCatalogPanel">
+							<li><input type="checkbox"> 个人图片 </li>
+							<li><input type="checkbox"> 部门图片 </li>
+							<li><input type="checkbox"> 公司图片 </li>
+						</div>
+						
+						<div>
+							>>二级分类
+						</div>
+						<div class="uploadFormCatalogPanel">
+							<li><span></span><input type="checkbox"> 风景</span> </li>
+							<li><span><input type="checkbox"> 名胜古迹</span> </li>
+							<li><span><input type="checkbox"> 亲戚朋友</span> </li>
+							<li><span><input type="checkbox"> 特写</span> </li>
+							<li><span><input type="checkbox"> 工程图纸</span> </li>
+							<li><span><input type="checkbox"> 旅游胜地</span> </li>
+							<li><span><input type="checkbox"> 名山大川 </span></li>
+							<li><span><input type="checkbox"> AUTOCAD</span> </li>
+							<li><span><input type="checkbox"> 随拍 </span></li>
+							<li><span><input type="checkbox"> 保密</span></li>
+							<li><span><input type="checkbox"> 宣传资料</span></li>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="uploadFormCapacity">
+					<div style="border-bottom:1px #efefef solid;font-weight:bold">媒体库容量</div>
+					<div>
+					<img src="${ctx}/resources/images/capacity.png">
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="lotusDialogFooter">
+	<input value="确定" class="lotusFormButton" type="button"  /></td>
+			<td> <input value="取消" class="lotusFormButton" type="button" /></td>
+	</div>
+</div>
+
+
+
+	

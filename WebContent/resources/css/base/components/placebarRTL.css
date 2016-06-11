@@ -1,0 +1,20 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for the place bar (layout)
+companion files: placebar.css / placebarTheme.css
+companion files: placebarRTL.css / placebarThemeRTL.css*/
+/*** P L A C E   B A R ***/
+/*this place bar shows up right below the title bar and tells user what place or community they are in*/
+
+.lotusPlaceBar{position:relative;border-width:0 1px 1px 1px;border-style:solid;border-color:#c0c7cd;overflow:hidden;background-color:#fff;background-image:none/*gets rid of the sprite*/;background-image:-moz-linear-gradient(top, #ffffff 0%, #efefef 100%);background-image:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#efefef));background-position:top left;background-repeat:repeat-x;zoom:1}
+.lotusPlaceBar h2{padding:2px 20px 0 0;float:right;font-size:1.4em;line-height:2em;font-weight:normal;color:#000;}
+.lotusPlaceBar .lotusBtnContainer{float:left;padding:.5em 10px .5em 5px;}/*buttons show up on the right side of the place bar*/
+
+
+
+
+
+/***********************************************************/
+

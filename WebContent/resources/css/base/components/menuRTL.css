@@ -1,0 +1,47 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for menu
+companion files: menu.css / menuTheme.css
+companion files: menuRTL.css / menuThemeRTL.css*/
+/*** M E N U ***/
+/*this is the green menu found at the top of the left column*/
+/*this menu is set up to allow for rounded corners in all browsers and is a set width*/
+
+.lotusMenu, .portlet-menu{margin:0 0 15px 0;padding:5px 0;width:178px;background-color:#eee;border:1px solid #ccc;-moz-border-radius:4px;-webkit-border-radius:4px}
+.lotusMenu .lotusInner, .portlet-menu .lotusInner{overflow:hidden}
+.lotusMenu .lotusMenuSection{overflow:hidden;margin:0 0 3px 0;padding-bottom:5px;border-bottom:1px solid #ccc;zoom:1}/*creates a section in the menu, with a divider at the bottom*/
+.lotusMenu .lotusMenuSubsection{margin:10px 20px 0 0;}/*allows you to indent a section of the menu*/
+.lotusMenu h2, .portlet-menu h2{margin:0 10px 7px 0;padding:0;font-size:1em}
+.lotusMenu h3, .portlet-menu h3{margin:0 5px;padding:5px 10px 5px 0;line-height:1.0em;color:#4f9815}
+.lotusMenu .lotusMenuSubsection h3{margin-right:-15px}
+.lotusMenu h3.lotusSelected, .portlet-menu h3.lotusSelected{color:#fff;background-color:#595b5d;border:1px solid #595b5d;}
+.lotusMenu h3 a.lotusArrow{margin-left:0;margin-top:-2px}
+/*Use a ul element for menu items. Put an additional lotusIcons class on it if your menu items have icons*/
+.lotusMenu ul, .portlet-menu ul{margin:0;padding:0;list-style-type:none;}
+.lotusMenu li{zoom:1}/*sets hasLayout in IE*/
+.lotusMenu li img, .portlet-menu .lotusMenu li img{margin:0 0 0 3px}
+.lotusMenu li a, .lotusMenu li a:visited, .portlet-menu li a, .portlet-menu li a:visited{padding:5px 10px 5px 0;display:block;text-decoration:none;font-weight:normal;line-height:1.0em;color:#000}
+/*lotusIcons is assigned to a list of menu items with icons; an image is added inside the link before the text.  This is legacy code*/
+.lotusMenu ul.lotusIcons img{vertical-align:text-bottom}
+.lotusImagesOff ul.lotusIcons img{display:inline-block}/*overrides general style that turns these images off - need this to preserve alignment*/
+.lotusMenu ul.lotusIcons a{padding:3px 10px 3px 0}
+.lotusMenu li a:hover, .lotusMenu li a:focus, .portlet-menu li a:hover, .portlet-menu li a:focus{text-decoration:underline}
+.lotusMenu li.lotusSelected a, .lotusMenu li.lotusSelected a:visited, .lotusMenu li.lotusSelected a:active, .portlet-menu li.lotusSelected a, .portlet-menu li.lotusSelected a:visited, .portlet-menu li.lotusSelected a:active{margin:0 5px;padding-right:6px;color:#fff !important;background-color:#595b5d;border:1px solid #595b5d;text-decoration:none;cursor:default;font-weight:bold;}
+.lotusMenu div.lotusChunk, .portlet-menu .lotusMenu div.lotusChunk {margin:5px 0 0 5px;}/*lotusChunk allows you to apply vertical spacing within sections - wrap a div with this class around "chunks" of data*/
+.lotusMenu .lotusAction{margin-right:30px;display:inline-block;}
+/*menu arrows are created as CSS sprites, using the lotusArrow class found in baseTheme.css*/
+.lotusTwistyOpenMenu, .lotusTwistyClosedMenu{width:11px;height:16px}
+.lotusTwistyOpenMenu{background-position:0 -464px}/*the section is selected*/
+.lotusTwistyClosedMenu{background-position:0 -58px}
+.lotusMenu h3.lotusSelected .lotusTwistyOpenMenu{background-image:url(../../images/lotusSprite-8bit.png);background-position:0 -580px}/*the section is selected*/
+.lotusMenu h3.lotusSelected .lotusTwistyClosedMenu{background-position:0 -406px}
+.lotusMenu .lotusArrow, .lotusMenu .lotusArrow:hover, .lotusMenu .lotusArrow:focus{color:#fff;text-decoration:none}
+
+
+
+                                                                                                                      
+
+/***********************************************************/
+

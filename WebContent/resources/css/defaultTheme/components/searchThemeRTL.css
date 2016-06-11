@@ -1,0 +1,25 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for search
+companion files: search.css / searchTheme.css
+companion files: searchRTL.css / searchThemeRTL.css*/
+/*** S E A R C H ***/
+/*these styles support the search UI in the title bar*/
+
+
+
+.lotusSearch .lotusSearchButton{color:#000;}
+.lotusSearch .lotusScope:hover, .lotusSearch .lotusScope:focus{background-color:#3b506f}
+.lotusSearch .lotusScope, .lotusSearch .lotusText, .lotusSearch .dijitTextBox, .lotusSearch .lotusBtnImg{border-color:#7a7e81}
+
+
+
+.lotusSearch .lotusText, .lotusSearch .lotusScope{padding-top:3px;padding-bottom:3px}
+/*.lotusSearch .lotusScope{background-position: 100% -981px}*/
+.lotusSearch .lotusBtnImg{padding:3px}
+.lotusSearch .lotusScope, .lotusSearch .lotusText, .lotusSearch .dijitTextBox, .lotusSearch .lotusBtnImg{border-color:#aaa}
+
+/***********************************************************/
+

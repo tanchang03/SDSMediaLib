@@ -1,0 +1,290 @@
+
+/**
+SUA STYLES 首页
+**/
+.lotusTitleBar .lotusTabs li{border-color:#4675AD;border-bottom-color:#6794cb;background-color:#4372A9;font-family: '微软雅黑'}
+.lotusTitleBar .lotusTabs, .lotusTitleBar .portlet-tab{left:10px}/*override this positioning in your custom css file if you don't use an appliacation title*/
+.lotusBanner{background-color:transparent; height: 50px;font-family:'微软雅黑'}
+.lotusBanner ul.lotusLinks{line-height: 80px;}
+
+.lotusui .lotusLogo, .lotusLoginLogo{height:55px;width:345px;background-image:url(themeImages/logo.png);background-repeat:no-repeat;}/*height, width values are in this file to aid in retheming*/
+
+
+/*.leftMenuGraphicDiv img{padding:2px 2px 2px 5px;}*/
+.lotusColLeft{float:left;width:250px;padding:15px 10px;zoom:1}
+.lotusMenu, .portlet-menu{width:250px;}
+.lotusWidget2 h2{color:#0651B0;font-family: '微软雅黑';cursor: default;height:26px;}
+.lotusContent{padding: 15px 12px 2px 0px;}
+.lotusColRight {padding-left:0px;}
+.lotusFooter .footerLogo{height:45px;	width:146px;;	float:left;	margin:2px 10px 2px 2px;	background-image:url(themeImages/logo2.png);}
+
+.lotusFooter .fotterLink{	margin:10px 10px 10px 10px;}
+
+.lotusWidget2 h3{font-weight: bold;font-family: '微软雅黑'}
+
+.lotusui .lotusIBMLogo{background-image:url(themeImages/logo.png);background-repeat:no-repeat;width: 145px;height: 38px;background-position: 0 0;}
+.lotusLogin2 .lotusLegal{width:500px;}
+.lotusLogin .lotusLoginContent img{top: 90px;}
+.lotusui input.lotusCheckbox{margin-left:0;margin-right:5px}
+
+.suaSprite {
+	background-image: url('themeImages/suaSprite-8bit.png');
+	background-repeat: no-repeat;
+	display: -moz-inline-box;
+	display: inline-block;
+}
+
+.suaSprite-iconHelp16 {
+	width: 13px;
+	height: 13px;
+	background-position: 0 -268px;
+}
+.personGridExpando{
+	background-image: url(themeImages/treeExpandImages.png);
+	width: 16px;
+	height: 16px;
+	background-position: -35px 0;
+}
+.personGridExpandoOpened{background-position: -35px 0;}
+.personGridExpandoClosed{background-position: -17px 0;}
+
+.loadingText{color: #888888}
+.tipText{color: red}
+
+.table_subaccount{
+	
+}
+.table_subaccount td{
+	border-top: 1px dashed #000;
+	height:25px;
+}
+.table_subaccount .firstRow{
+	border-top: 0px;
+}
+.table_subaccount .td_subaccount_op{
+	text-align: left;
+}
+
+.suaaccount_indicator_img{
+	background-image: url(themeImages/suaSprite-8bit.png);
+	width: 16px;
+	height: 16px;
+	background-position: 0px -325px;
+	background-repeat: no-repeat;
+	padding-right: 10px;
+}
+
+.suaaccount_notmatch_img{
+	background-image: url(themeImages/suaSprite-8bit.png);
+	width: 16px;
+	height: 16px;
+	background-position: 0px -265px;
+	background-repeat: no-repeat;
+	padding-right: 10px;
+}
+
+.suaaccount_matched{
+	background-image: url(themeImages/suaSprite-8bit.png);
+	width: 16px;
+	height: 16px;
+	background-position: 0px -567px;
+	background-repeat: no-repeat;
+	padding-right: 10px;
+}
+
+/*表单中文本框高度*/
+.lotusForm .lotusText{	height:25px;}
+
+/*对话框的最大高度，尽量避免出现滚动条*/
+.lotusDialog .lotusDialogContent{	max-height: 1000px;	padding:0px 0 0 0;}
+.lotusDialogBorder{
+	min-width: 100px;
+	max-width: 1200px;
+}
+a.lotusAction, a.lotusAction:visited,.lotusTable .lotusMeta,.lotusSort,.lotusPaging {
+	font-size: 9pt;
+}
+.lotusTable th{
+	font-weight: bold;;
+}
+
+.pageTitle h1{
+	float:left;
+	font-size:15pt;
+	padding:10px 10px 10px 0;
+	font-weight:bolder;
+	font-family: '微软雅黑'
+	}
+.pageTitle{
+	text-align: left;
+	line-height: 50px;
+}
+
+.lotusBreadcrumbs{margin:10px 40px 10px 20px}
+.lotusSectionBodyRight{margin:-293px 0 5px 370px}
+.lotusVertTable th{padding-right:20px;text-align:left;vertical-align:top;font-weight:normal;color:#666;}
+.lotusSectionRight h2{overflow:hidden;padding:4px 3px 0 320px;cursor:pointer !important}
+
+.personActivate{
+	background-image: url(themeImages/actst.gif);
+	width: 16px;
+	height: 16px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.personInactive{background-position: 0 0;}
+.personActivated{background-position: -21px 0;}
+
+.readOnlyInput{
+	background-color:#E0E0E0;
+}
+
+.xtTable td{
+	vertical-align: middle;
+	padding: 2px 0px 2px 2px;
+}
+.personActivated{background-position: -21px 0;}
+
+.personDetailTop{
+	font-family: '微软雅黑';
+	padding-bottom: 25px;
+}
+
+.personDetailTop h1{
+	color: #105BB6;
+	font-weight: bold;
+}
+
+.personDetailTop div{
+	padding: 5px 0px 0px 0px;
+}
+
+.personDetailMid tr{
+	height: 20px;
+}
+.personDetailMid h2{
+	font-family: '微软雅黑';
+	font-size: 9pt;
+}
+.personDetailMid .colLeft{
+	float:left;
+	width: 300px;
+}
+
+.personDetailMid .colRight{
+}
+
+.personDetailMid .colRight div{
+	clear: right;
+	position: static;
+}
+
+.tagPanelDiv{
+	padding: 2px 2px 2px 10px;
+}
+.tagPanelDiv a{
+	padding-left:5px;
+	font-weight: bold;
+}
+.thumbnailPicList li{
+	margin-right: 20px;
+	margin-bottom: 25px;
+	list-style: none;
+	float:left;
+	overflow: hidden;
+	zoom: 1;
+	background: white;
+	border: 1px solid #EBEBEB;
+	border-bottom: 1px solid #CECECE;
+	padding: 14px;
+	box-shadow: 0 1px 1px #e5e5e5;
+	position: relative;
+}
+.thumbnailPicItem div.title{
+	font-family: "微软雅黑";
+	font-size: 15pt;
+}
+
+.thumbnailPicList ul{
+	padding-left: 5px;
+}
+.uploadFormTable td{
+	padding: 12px 2px 2px 10px;
+}
+.uploadFormPrePanel{
+	width:600px;
+	
+	height:520px;
+	padding:5px;
+	border: 5px #efefef solid;
+}
+
+.uploadFormCatalogPanel{
+	padding: 5px 0px 20px 0px;
+}
+
+.uploadFormCatalogPanel li{
+	list-style: none;
+	display: inline;
+	padding: 0px 5px 0px 5px;
+	vertical-align: middle;
+	line-height: 25px;
+}
+
+.messageNode{
+	position: absolute;
+	right:10px;
+	top:55px;
+	background-color: #FFFFBB;
+	border: 1px #FFCC00 solid;
+	text-align: center;
+	width: 200px;
+	float: right;
+	padding: 5px;
+	opacity: 0;
+}
+.catalogTitle{
+	font-weight: bold;
+	margin:10px 0px 5px 0px;
+	padding-left:20px;
+	background-image: url(themeImages/sprite-lconn-8bit.png);
+	background-position: 0 -960px;
+	background-repeat: no-repeat;
+	
+}
+.catalogItem{
+	padding: 2px 0px 2px 20px;
+}
+.catalogItemSelected{
+	background-color: #E1E1E1;
+	background-image: url(themeImages/sprite-lconn-8bit.png);
+	background-position: 3px -2031px;
+	background-repeat: no-repeat;
+}
+.catalogItemSelected a{
+	color: #0651B0;
+	font-weight: bold;
+}
+
+.removeCatalogHandler{
+	top: 2px;
+	width:20px;
+	height:18px;
+	right: 10px;
+	margin-right:5px;
+	padding-top:0px;
+	float: right;
+}
+.removeCatalogHandler div.selected{
+	display: none;
+}
+.removeCatalogHandler img{
+	background-image: url(themeImages/suaSprite-8bit.png);
+	background-position: -27px -175px ;
+	background-repeat: no-repeat;
+	border:1px #efefef solid;
+	width: 16px;
+	height:16px;
+}
+.catalogSplit{
+}

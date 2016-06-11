@@ -1,0 +1,78 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for forms
+companion files: forms.css / formsTheme.css
+companion files: formsRTL.css / formsThemeRTL.css*/
+/*** F O R M S ***/
+/*these styles are for inline and popup forms*/
+/*new, div-based form, labels on top*/
+
+.lotusForm2{margin:0;padding:0;zoom:1;background-color:#fafafa}
+.lotusFormPlain .lotusForm2{background-color:#fff;}/*for a form that is always on the page and not inline*/
+.lotusForm2 .lotusFormErrorSummary{padding:5px 20px}
+.lotusForm2 fieldset{border:1px solid #ccc;}
+.lotusForm2 .lotusFormTitle{padding:15px 20px}
+.lotusForm2 .lotusFormBody{padding:0 20px}
+.lotusFormTitle h2{font-size:1.3em;}
+.lotusForm2 label{font-weight:bold;width:99%;display:block;margin-bottom:3px}
+.lotusForm2 legend{font-weight:bold;color:#222}
+.lotusForm2 fieldset{margin:0;padding:0;border-width:0}/*this allows us to use fieldsets for non-sighted users, only*/
+.lotusForm2 .lotusFieldset{padding:5px;border:1px solid #aaa}/*assign this to a fieldset you want to display*/
+.lotusForm2 label.lotusCheckbox{font-weight:normal;display:inline;}/*use for radio buttons, too*/
+.lotusForm2 .lotusFormField{margin-bottom:10px}
+.lotusFormError, .lotusFormRequired {color:#f00;}/*this applies to older form styles, too*/
+.lotusForm2 .lotusFormError{margin-bottom:5px;font-weight:bold;}
+.lotusForm2 .lotusFormErrorField, .lotusForm2 .lotusFormErrorSummary{background-color:#fffabc;}
+.lotusForm2 .lotusText, .lotusForm2 textarea, .lotusForm2 select{border:1px solid #aaa;padding-left:1px;padding-right:1px}
+.lotusForm2 select{padding-right:0}/*select styling doesn't work in IE versions prior to IE8*/
+.lotusForm2 .lotusText {width:99%;}
+.lotusForm2 textarea {margin-bottom:7px;}
+.lotusForm2 .lotusFieldBorder{margin-bottom:7px;padding:4px;background-color:#eee}
+.lotusForm2 .lotusFieldBorder .lotusText{margin:0;padding:2px;width:98.5%;}
+.lotusForm2 .lotusFormFooter{padding:10px 20px;background-color:#eee;}
+.lotusui_ie .lotusForm2 .lotusFormFooter .lotusAction{vertical-align:super}/*fixes alignment of cancel link*/
+
+
+
+
+
+/*table-based form - use the div one moving forward*/
+.lotusForm{margin:0;padding:0;zoom:1;background-color:#fafafa}
+.lotusFormPlain .lotusTable, .lotusFormPlain .lotusFormTable td{background-color:#fff;}/*for a form that is always on the page and not inline*/
+.lotusForm h2 {margin:25px 15px 15px 25px;font-size:1.3em;}
+.lotusForm h2 .lotusMeta{font-size:.8em;font-weight:normal;display:block}
+.lotusForm tr.lotusFormFieldRow td, .lotusForm td.lotusFormFieldRow{padding-bottom:10px}
+.lotusTable .lotusForm td, .lotusFormTable td {border-width:0 !important;padding-right:3px;vertical-align:top}
+.lotusForm td.lotusFormLabel {vertical-align:top;text-align:right;padding-right:10px;padding-top:1px}
+.lotusui_ie .lotusForm td.lotusFormLabel{padding-top:2px}
+.lotusForm td label{font-weight:bold;}
+.lotusForm legend{font-weight:bold;color:#222}
+.lotusForm fieldset{margin:0;padding:0;border-width:0}/*this allows us to use fieldsets for non-sighted users, only*/
+.lotusForm .lotusFieldset{padding:5px;border:1px solid #aaa}/*assign this to a fieldset you want to display*/
+.lotusForm td.lotusNudge{width:22px}/*this goes on the first empty table cell if putting labels on top*/
+.lotusForm label.lotusCheckbox{font-weight:normal}/*use for radio buttons, too*/
+.lotusForm .lotusText {width:99%;}
+.lotusForm .lotusText, .lotusForm textarea, .lotusForm select{border:1px solid #aaa;padding-left:1px;padding-right:1px}
+.lotusForm select{padding-right:0}/*select styling doesn't work in IE versions prior to IE8*/
+.lotusForm textarea {margin-bottom:7px;}
+.lotusForm .lotusFieldBorder{margin-bottom:7px;padding:4px;background-color:#eee}
+.lotusForm .lotusFieldBorder .lotusText{margin:0;padding:2px;width:98.5%;}
+.lotusForm .lotusFormErrorSummary div {margin:10px 15px 3px 25px;}
+.lotusForm .lotusFormErrorSummary ul {margin:0 15px 10px 40px;list-style-type:disc;/*list-style-position:inside;*/}
+.lotusForm .lotusFormError, .lotusForm .lotusFormRequired {font-weight:bold;}
+.lotusForm .lotusFormErrorField, .lotusForm .lotusFormErrorSummary td {background-color:#fffabc;}
+td.lotusFormRequired {padding-bottom: 0 !important;}
+.lotusFormTable {width:100%;}
+.lotusForm .lotusFormSection {padding:5px 0 0 0;}
+.lotusFormTable .lotusFormFooter{padding:10px 25px !important;background-color:#eee;}
+/* form button element styles can be found in the button component */
+.lotusui_ie .lotusFormFooter .lotusAction{vertical-align:super}/*fixes alignment of cancel link - cancel link is now replaced with a button*/
+
+
+
+
+
+/***********************************************************/
+

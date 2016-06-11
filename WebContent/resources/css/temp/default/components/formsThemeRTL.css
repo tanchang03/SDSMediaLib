@@ -1,0 +1,34 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for forms
+companion files: forms.css / formsTheme.css
+companion files: formsRTL.css / formsThemeRTL.css*/
+/*** F O R M S ***/
+/*these styles are for inline and popup forms*/
+/*new, div-based form, labels on top*/
+
+
+
+.lotusForm2{background-color:#fafafa;}
+.lotusFieldBorder{background-color:#E9E9E9;}
+.lotusForm2 .lotusFormFooter {background-color:#eaecee;}
+.lotusForm2 input.lotusFormButton, .lotusForm2 button.lotusFormButton{border-color:#aaa}
+
+
+
+
+
+.lotusFormTable, .lotusFormTable td{background-color:#fafafa;}
+.lotusForm .lotusFieldBorder{background-color:#E9E9E9;}
+.lotusFormTable .lotusFormFooter {background-color:#eaecee;}
+.lotusForm input.lotusFormButton, .lotusForm button.lotusFormButton{border-color:#aaa}
+
+
+
+.lotusForm2 .lotusFormFooter, .lotusForm td.lotusFormFooter, .lotusFormTable td.lotusFormFooter{border-width:1px 0 0 !important;border-style:solid;border-color:#aaa}
+.lotusForm2 .lotusFieldBorder, .lotusForm .lotusFieldBorder{background-color:#eee}
+
+/***********************************************************/
+

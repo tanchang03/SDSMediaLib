@@ -1,0 +1,27 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for tabs
+companion files: tabs.css / tabsTheme.css
+companion files: tabsRTL.css / tabsThemeRTL.css*/
+/*** T A B S ***/
+/*tabs are used in content area and titlebar.  The style adjustments needed for the titlebar are grouped with the titleBar styles*/
+
+.lotusTabContainer{height:3em;position:relative;border-bottom:1px solid #ccc;z-index:1;margin-bottom:10px;}
+ul.lotusTabs, .portlet-tab{margin:0;padding:0;position:absolute;left:10px;bottom:-1px;overflow:hidden;list-style:none;}
+.lotusImagesOff ul.lotusTabs{bottom:-2px}
+.lotusImagesOff ul.lotusTabs .lotusSelected{border-bottom-width:0}
+.lotusTabs li, .portlet-tab li{margin:0 2px 0 0 !important;padding-left:3px;float:left;border-width:1px;border-style:solid;border-color:#eee;border-bottom-color:#ccc;background-color:#eee;;}/*set margins to important so they are preserved within other components*/
+.lotusTabs li.lotusSelected, .portlet-tab li.lotusSelected{background-color:#fff;border-color:#d9d9d9;border-bottom-color:#fff;}
+.lotusTabs a, .lotusTabs a:visited, .portlet-tab a, .portlet-tab a:visited{padding:6px 8px 6px 5px;display:block;text-decoration:none;line-height:1em;}/*line-height is for IE, to keep the selected tab sitting on top of the border when there is a drop-down image in the tab*/
+.lotusTabs li.lotusSelected a, .lotusTabs li.lotusSelected a:visited, .portlet-tab li.lotusSelected a, .portlet-tab li.lotusSelected a:visited{font-weight:bold;color:#000;}
+.lotusTabs a:hover, .lotusTabs a:focus, .portlet-tab a:hover, .portlet-tab a:focus{text-decoration:none}
+/*a style that can be applied to a div that allows you to surround a tab content area with a border*/
+.lotusTabContent{margin:-10px 0 12px 0;padding:10px;border-width:0 1px 1px 1px;border-style:solid;border-color:#d9d9d9;}
+
+
+
+
+
+/****************************************************************/

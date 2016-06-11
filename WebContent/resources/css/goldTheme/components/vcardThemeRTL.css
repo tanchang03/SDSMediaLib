@@ -1,0 +1,24 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+styles for the person card, a component sometimes used outside our framework
+companion files: vcard.css / vcardTheme.css
+companion files: vcardRTL.css / vcardThemeRTL.css*/
+
+/*** V C A R D (P E R S O N   C A R D)***/
+/*this is the popup person card that shows up when you click on a person link (via a hover link)*/
+
+
+
+.lotusVCard a:link, .lotusVCard a:visited, .lotusVCard a:hover, .lotusVCard a:focus, a:active{color:#105cb6}
+.lotusVCard .lotusAppLinks td{background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -900px;}
+.lotusVCard .lotusActionMenu a, .lotusActionMenu a:visited{color:#000}
+.lotusVCard .lotusActionMenu a:hover, .lotusVCard .lotusActionMenu a:focus, .lotusVCard .lotusActionMenu a:active{color:#fff !important;background-color:#787252;}
+
+/***********************************************************/
+
+/*** V C A R D   H O V E R ***/
+/*this is the hover link that shows when you hover over a person's name and allows you to open their profile card*/
+
+/***********************************************************/

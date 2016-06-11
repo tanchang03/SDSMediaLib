@@ -1,0 +1,61 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+this file contains layout style adjustments for dojo widgets
+they override/add to the styles in dijit.css
+companion files: dojo.css / dojoTheme.css
+companion files: dojoRTL.css / dojoThemeRTL.css*/
+/******************************/
+/*** D O J O   S T Y L E S ****/
+/******************************/
+
+/*** A C T I O N   M E N U S    A N D   T Y P E   A H E A D ***/
+/*this is the dojo version of our action menus*/
+
+
+
+.dijitMenuTable{background:#fff url(themeImages/actionMenuBkgd.png) right top repeat-y;}
+
+
+
+/*this is the dojo version of our action menus*/
+.dijitMenuItemSelected, .dijitMenuItemHover{background-color:#7a7e81;color:#fff;}
+/*type ahead styles*/
+li.dijitMenuItemHover{background-color:#fefebb;color:#000}
+
+/***********************************************************/
+
+/*** C A L E N D A R / D A T E   P I C K E R ***/
+
+
+
+/***********************************************************/
+
+
+
+/*** R I C H   T E X T   E D I T O R ***/
+
+
+
+.RichTextEditable .dijitToolbar{background-image:url(themeImages/lotusThemeSprite-8bit.png);background-position:0 -900px;border-bottom-color:#999}
+
+/***********************************************************/
+
+/*** S L I D E R ***/
+
+
+
+.dijitSliderProgressBar{background-color:#8bbce8;}
+
+/***********************************************************/
+
+/*** T O O L T I P ***/
+
+
+
+.dijitTooltipContainer{background-image:url(themeImages/lotusThemeSprite-8bit.png);background-position:0 -450px}
+
+/***********************************************************/
+
+

@@ -1,0 +1,78 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for comments
+companion files: comments.css / commentsTheme.css
+companion files: commentsRTL.css / commentsThemeRTL.css*/
+/*** C O M M E N T ***/
+
+.lotusPost{padding:7px 7px 7px 0;overflow:hidden;zoom:1}
+.lotusPost .lotusMeta{margin-bottom:-5px;margin-right:15px;font-size:0.9em;}
+.lotusPostContent{padding:0 0 7px 0;min-height:26px;position:relative;overflow:hidden;zoom:1;}
+.lotusPostAuthorInfo{display:block;float:left;font-size:0.9em;position:relative;width:50px;}/*the background styles are to allow a comment point on variants of the base comment, but the default comment type has no point*/
+.lotusPostAuthorInfo .lotusPostAvatar{background-repeat:no-repeat;}
+.lotusImagesOff .lotusPostAvatar{display:none}
+.lotusPost .lotusPostAuthorInfo .lotusMeta{margin:0;font-size:1em}
+.lotusui_ie6 .lotusPostContent{left:-3px}/*to counteract the IE6 3px margin bug*/
+.lotusPostName{padding-top:5px;font-weight:bold;line-height:1.1em;}
+.lotusPostAvatar{padding-top:5px}
+.lotusPost .lotusDelete{display:block;position:absolute;top:7px;right:15px}
+.lotusAddComment{padding:4px;zoom:1;margin-bottom:10px;margin-right:4px;background-color:#eee}
+.lotusAddComment a.lotusCommentInput{padding:2px 2px 10px 4px;border:1px solid #aaa;background-color:#fff;display:block;}
+.lotusui .lotusAddComment a.lotusCommentInput:hover{border-bottom:1px solid #aaa!important;}
+/*important is to keep this from clashing with lotusActions classes, if applied*/
+/*update status "comment"*/
+.lotusUpdateStatus{padding:3px 7px;background-color:#eee;}
+.lotusImagesOff .lotusUpdateStatus{border-width:1px;border-style:solid}
+.lotusUpdateStatus .lotusPostDetails{margin:0 0 3px 10px;} 
+.lotusUpdateStatus .lotusPostStatusControl{margin-left:10px;background-color:#fff;}
+.lotusUpdateStatus .lotusPostStatusControl .lotusStatusInput{padding:4px;display:block;} 
+.lotusImagesOff .lotusUpdateStatus .lotusPostStatusControl .lotusStatusInput{border-width:1px;border-style:solid}
+/*comment containers*/
+ul.lotusCommentList{margin:0;padding:0;list-style-type:none}/*assigned to the ul tag containing a list of comments*/
+ul.lotusCommentList li{border-top-color:#eee}
+ul.lotusCommentList li.lotusCommentItem{border-top-width:1px;border-top-style:solid}
+ul.lotusCommentList li.lotusFirst{border-top-width:0}
+.lotusCommentList li.lotusAddComment{margin:0;/*border-top-width:0;*/font-size:.9em;}
+.lotusCommentList li.lotusAddComment a{padding-bottom:2px}
+/*style adjustments for comments on the board/wall*/
+.lotusBoard .lotusPost{border-top:1px solid #eee}
+.lotusBoard .lotusPostContent{padding:0 15px 7px 0;}
+.lotusBoard .lotusCommentList{margin:-6px 0 5px 0;padding:0;width:500px;}
+.lotusBoard ul.lotusCommentList li.lotusCommentItem{margin:1px 7px 0 50px;border-top-width:0;}
+.lotusBoard ul.lotusCommentList li.lotusFirst{padding-top:10px;background:url(../../images/lotusSprite-8bit.png) 15px -1137px no-repeat;}
+.lotusBoard .lotusCommentList .lotusPost{margin-bottom:1px;}
+.lotusBoard .lotusCommentList .lotusPost, .lotusBoard .lotusCommentList .lotusAddComment{background-color:#eee;}
+.lotusBoard .lotusCommentList .lotusPostAuthorInfo{padding-left:6px; padding-right:4px; width:45px; }
+.lotusBoard .lotusPost .lotusPostAvatar{padding:2px 0 0 2px;}
+.lotusBoard .lotusPost .lotusCommentList .lotusPostAvatar{padding:2px 6px 0 2px;}
+.lotusBoard .lotusStatus .lotusDelete{top:0}
+.lotusBoard .lotusCommentList .lotusDelete{top:0;right:10px}
+.lotusBoard .lotusPost .lotusPerson { font-weight:bold; padding-right:2px; }
+.lotusBoard .lotusCommentPaging{font-style:italic;background-color:#eee;}
+.lotusBoard .lotusPostDetails { padding-top:2px; }
+
+/*styles for comments in a discussion forum*/
+.lotusForum .lotusPost{margin:7px 0;background-color:#ccc}
+.lotusImagesOff .lotusForum .lotusPost{border-width:1px;border-style:solid}
+.lotusForum .lotusPostAuthorInfo{width:100px;text-align:center}
+.lotusForum .lotusPostAuthorInfo .lotusPostAvatar{padding-top:0;background:url(../../images/lotusSprite-8bit.png) 100% -1373px no-repeat}
+.lotusForum .lotusPostContent{padding:7px 15px;background-color:#fff}
+.lotusForum ul.lotusCommentList .lotusPost{background-color:#eee}
+.lotusForum ul.lotusCommentList li.lotusCommentItem{border-width:0}
+.lotusForum ul.lotusCommentList .lotusChild{margin-left:0;padding-left:20px;list-style-type:none;background: url(../../images/commentIndent.png) left top no-repeat;}
+.lotusForum .lotusPostDetails{padding:5px 0}
+.lotusForum .lotusPostDetails blockquote{margin:4px 0;padding:4px 8px;width:75%;color:#545454;background-color:#eee;border-width:1px 1px 1px 3px;border-style:solid;border-color:#ccc;}
+/*simple comment bubble*/
+.lotusCommentBubble{padding-top:10px;background:url(../../images/lotusSprite-8bit.png) 15px -1137px no-repeat;zoom:1}
+.lotusCommentBubbleBody{padding:5px 10px 5px 15px;background-color:#eee;}
+.lotusImagesOff .lotusCommentBubbleBody{border-width:1px;border-style:solid}
+.lotusCommentBubble .lotusMeta{font-size:.9em}
+
+
+
+
+
+/***********************************************************/
+

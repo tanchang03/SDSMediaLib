@@ -1,0 +1,54 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+companion files: deprecated.css / deprecatedTheme.css
+companion files: deprecatedRTL.css / deprecatedThemeRTL.css*/
+/************* D E P R E C A T E D   S T Y L E S ******************/
+/*button in left column, set width*/
+/*use lotusBtn, instead*/
+
+
+
+.lotusButton{border-color:#c0c7cd;}/*default button outside border*/
+.lotusButton:hover, .lotusButton:focus{border-color:#8e8e8e;}
+.lotusButton a, .lotusButton a:visited{border-color:#dedede;color:#222;background-color:#dedede;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 0}/*span buttons have an inside border*/
+
+
+
+
+
+
+
+/*filters used to be part of the header css files*/
+.lotusFilters a.lotusFilter{background-color:#f7f5f0;border-color:#CCC4A4}
+.lotusFilters a .lotusClose{color:#CCC4A4}
+
+
+
+/*** W I D G E T ***/
+
+
+
+.lotusWidget .lotusWidgetBody{border-color:#E8ECEE;}
+.lotusWidget h2{border-color:#E8ECEE;background-color:#E8ECEE;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -900px;}
+.lotusWidgetPlain h2{border-width:1px 1px 0 1px}
+.lotusWidget h3, .lotusWidget .lotusWidgetFooter{border-color:#e8ecee;}
+
+
+
+/***********************************************************/
+
+
+
+
+/*** L O G I N ***/
+/*this can appear on a plain connections page (gradient background only), or launched in a separate window*/
+
+
+
+.lotusLogin .lotusLoginBox{background-image:url(../themeImages/loginBkgd.jpg)}
+
+/***********************************************************/
+
+

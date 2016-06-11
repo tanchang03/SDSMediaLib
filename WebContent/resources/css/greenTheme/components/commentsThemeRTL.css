@@ -1,0 +1,31 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for comments
+companion files: comments.css / commentsTheme.css
+companion files: commentsRTL.css / commentsThemeRTL.css*/
+/*** C O M M E N T ***/
+
+
+
+.lotusAddComment{background-color:#e2f1e3;}
+.lotusui .lotusAddComment a.lotusCommentInput, .lotusui .lotusAddComment a.lotusCommentInput:hover, .lotusui .lotusAddComment a.lotusCommentInput:focus{background-color:#fff;border-color:#66ad69 !important;}/*important is to keep this from clashing with lotusActions classes, if applied*/
+.lotusUpdateStatus{background-color:#b4d5fc;}
+/*comment containers*/
+ul.lotusCommentList li{border-top-color:#e3e2e2}
+/*style adjustments for comments on the board/wall*/
+.lotusBoard .lotusPost{border-color:#E8EDF3}
+.lotusBoard .lotusCommentList .lotusPost, .lotusBoard .lotusCommentList .lotusAddComment{background-color:#ededed;}
+.lotusBoard .lotusCommentPaging{background-color:#E8EDF3;}
+/*styles for comments in a discussion forum*/
+.lotusForum .lotusPost{background-color:#d6f2c4;}
+.lotusForum .lotusPostContent{background-color:#fff}
+.lotusForum ul.lotusCommentList .lotusPost{background-color:#ededed}
+.lotusForum .lotusPostDetails blockquote{background-color:#ededed;border-color:#DFE4E9;}
+.lotusCommentBubbleBody{background-color:#ededed;}
+
+
+
+/***********************************************************/
+

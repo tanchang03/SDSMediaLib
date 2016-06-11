@@ -1,0 +1,452 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+*****************************************************************************
+This file contains styles for components
+
+components.css is created by including content from css files located in the
+components directory.
+companion files: components.css / componentsTheme.css
+companion files: componentsRTL.css / componentsThemeRTL.css
+******************************************************************************/
+
+/****************************************/
+/*** C O M P O N E N T   S T Y L E S ****/
+/****************************************/
+
+
+
+
+
+
+/*****************************/
+/*** A C T I O N   M E N U ***/
+/*****************************/
+
+
+
+ul.lotusActionMenu{background-color:#fff}
+.lotusActionMenu a{color:#000;}
+.lotusActionMenu a:hover, .lotusActionMenu a:focus, .lotusActionMenu a:active{color:#fff !important;background-color:#787252}
+
+
+ul.lotusActionMenu{background:#fff url(../themeImages/actionMenuBkgd.png) top left repeat-y}
+
+/***********************************************************/
+
+
+
+/*** B R E A D C R U M B S ***/
+/*these sit above the page header (lotusHeader)*/
+/*use lotus divider for an image in between breadcrumbs that when clicked shows a drop-down menu, otherwise, just use &gt; between breadcrumbs*/
+
+/***********************************************************/
+
+
+
+/*** B U T T O N S ***/
+
+
+
+/*form buttons are the same style right now as the special buttons*/
+/*action buttons (lotusActionBtn) just use the lotusBtn style now, if you want them to look different you can define a style*/
+/*our regular buttons*/
+.lotusBtn, .lotusFormButton, .lotusBtnImg{border:1px solid #c0c7cd;}
+.lotusBtn a, .lotusBtn a:visited, input.lotusBtn, button.lotusBtn{color:#222;background-color:#dedede;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 0}
+/*form and other blue buttons*/
+.lotusBtnSpecial, .lotusFormButton, .lotusBtnImg{border-color:#a79d5a}
+.lotusBtnSpecial a, .lotusBtnSpecial a:visited, .lotusBtnImg img, .lotusBtnImg input{color:#fff;border-color:#c9be77;}/*span buttons have an inside border*/
+.lotusBtnSpecial a, .lotusBtnSpecial a:visited, input.lotusBtnSpecial, button.lotusBtnSpecial, input.lotusFormButton, button.lotusFormButton, .lotusBtnImg{color:#ffffff;background-color:#645f3d;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -1350px}
+
+/*hover states*/
+/*default buttons*/
+.lotusBtn:hover, .lotusBtn:focus, .lotusBtn:active{border-color:#8e8e8e;}
+.lotusBtn a:hover, .lotusBtn a:focus, .lotusBtn a:active{color:#222;}
+/*form and blue buttons*/
+.lotusBtnSpecial:hover, .lotusBtnSpecial:focus, .lotusBtnSpecial:active, .lotusFormButton:hover, .lotusFormButton:focus, .lotusFormButton:active, .lotusBtnImg:hover, .lotusBtnImg:focus, .lotusBtnImg:active{border-color:#46432B}
+.lotusBtnSpecial a:hover, span.lotusBtnSpecial a:focus, .lotusBtnSpecial a:active, .lotusImagesOff  .lotusBtnImg a, .lotusImagesOff  .lotusBtnImg a:visited, .lotusImagesOff  .lotusBtnImg a:hover, .lotusImagesOff  .lotusBtnImg a:focus, .lotusImagesOff  .lotusBtnImg a:active, .lotusImagesOff  a.lotusBtnImg, .lotusImagesOff  a.lotusBtnImg:visited, .lotusImagesOff  a.lotusBtnImg:hover, .lotusImagesOff  a.lotusBtnImg:focus, .lotusImagesOff  a.lotusBtnImg:active{color:#ffffff}/*to make sure color sticks when images are turned off, etc.*/
+
+/*disabled button - styles need to be at the end of all our button styles so they are picked up.  Uses regular button styles and a grayed out text color*/
+.lotusBtnDisabled{border-color:#c0c7cd !important;}/*we don't want disabled button border color to change on hover*/
+.lotusBtnDisabled a, .lotusBtnDisabled a:visited{border-color:#dedede;}/*span buttons have an inside border*/
+.lotusBtnDisabled a, .lotusBtnDisabled a:visited, input.lotusBtnDisabled, button.lotusBtnDisabled{color:#b0b0b0 !important;background-color:#dedede;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 0}
+
+
+
+/***********************************************************/
+
+
+
+/*** C A P T I O N ***/
+/*provides a gray background for a caption above another component*/
+
+
+
+.lotusCaption{background-color:#f3f3f3;border-color:#f3f3f3}
+
+/***********************************************************/
+
+
+
+/*** C O M M E N T ***/
+
+
+
+.lotusAddComment{background-color:#E8EDF3;}
+.lotusui .lotusAddComment a.lotusCommentInput, .lotusui .lotusAddComment a.lotusCommentInput:hover, .lotusui .lotusAddComment a.lotusCommentInput:focus{background-color:#fff;border-color:#BDC7DB !important;}/*important is to keep this from clashing with lotusActions classes, if applied*/
+.lotusUpdateStatus{background-color:#b4d5fc;}
+/*comment containers*/
+ul.lotusCommentList li{border-top-color:#e3e2e2}
+/*style adjustments for comments on the board/wall*/
+.lotusBoard .lotusPost{border-color:#E8EDF3}
+.lotusBoard .lotusCommentList .lotusPost, .lotusBoard .lotusCommentList .lotusAddComment{background-color:#ededed;}
+.lotusBoard .lotusCommentPaging{background-color:#E8EDF3;}
+/*styles for comments in a discussion forum*/
+.lotusForum .lotusPost{background-color:#B4D5FC;}
+.lotusForum .lotusPostContent{background-color:#fff}
+.lotusForum ul.lotusCommentList .lotusPost{background-color:#ededed}
+.lotusForum .lotusPostDetails blockquote{background-color:#ededed;border-color:#DFE4E9;}
+.lotusCommentBubbleBody{background-color:#ededed;}
+
+
+
+/***********************************************************/
+
+
+
+/*** D I A L O G ***/
+/*this can be wrapped in a dojo dialog, if desired, which gives you the lightbox behavior for free, else, wrap it in a div assigned the class lotusDialogWrapper*/
+
+
+
+.lotusDialogBorder{border:4px solid #aaa;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;}
+.lotusDialog h1{border-bottom-color:#f5f3de;background:url(../themeImages/lotusThemeSprite-8bit.png) 0 -900px repeat-x;}
+.lotusDialog .lotusDialogContent{border-bottom-color:#f5f3de;}
+.lotusDialog .lotusDialogFooter{background-color:#f5f3de;}
+.lotusDialog input.lotusFormButton, .lotusDialog button.lotusFormButton{border-color:#a79d5a}
+
+
+
+/***********************************************************/
+
+
+
+/***************************************/
+/*** D I S P L A Y   C O N T R O L S ***/
+/***************************************/
+
+
+
+.lotusViewControl div{background-color:#fff;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 0;background-repeat:repeat-x}
+
+
+
+/***********************************************************/
+
+
+
+/*** F E E D S **/
+/*the feed links under the content*/
+
+/***********************************************************/
+
+
+
+/*** F I L T E R S **/
+/*the filter links that are removable*/
+
+
+
+.lotusFilters2 a.lotusFilter{border-color:#d0d1d1;background-color:#ebecec;}
+
+
+
+/***********************************************************/
+
+
+
+/*** F O R M S ***/
+/*these styles are for inline and popup forms*/
+/*new, div-based form, labels on top*/
+
+
+
+.lotusForm2{background-color:#f9f9ee;}
+.lotusFieldBorder{background-color:#E9E9E9;}
+.lotusForm2 .lotusFormFooter {background-color:#f5f3de;}
+.lotusForm2 input.lotusFormButton, .lotusForm2 button.lotusFormButton{border-color:#a79d5a}
+
+
+
+
+
+.lotusFormTable, .lotusFormTable td{background-color:#f9f9ee;}
+.lotusForm .lotusFieldBorder{background-color:#E9E9E9;}
+.lotusFormTable .lotusFormFooter {background-color:#f5f3de;}
+.lotusForm input.lotusFormButton, .lotusForm button.lotusFormButton{border-color:#a79d5a}
+
+
+
+/***********************************************************/
+
+
+
+
+/*** G R I D ***/
+/*for a group of same-sized elements with a div as the outer wrapper*/
+/*for example, a group of people photos*/
+
+/***********************************************************/
+
+
+
+/*** H E A D E R ***/
+/*found at the top of the page, center column*/
+
+/***********************************************************/
+
+
+
+/*** I N F O   B O X ***/ 
+/*this is used for help and tips*/
+
+
+
+.lotusInfoBox, .portlet-msg{margin:15px 0 5px 0;padding:5px;border:1px solid #e2c15a;-moz-border-radius:2px;-webkit-border-radius:2px;overflow:hidden;zoom:1;background-color:#fef6ab;}
+.lotusInfoBox h3, .portlet-msg h3{color:#b47429;}
+.lotusHelp .lotusInfoBox{background:#f0f0f0 url(../themeImages/lotusThemeSprite-8bit.png) 0 -450px repeat-x;border:1px solid #c5c5c5;}
+.lotusHelp h3{color:#222}
+
+
+
+/***********************************************************/
+
+
+
+/*** L E G A L   S T A T E M E N T ***/
+/*IBM logo and legal statement*/
+/*3 different versions - regular pages, login page, and about page*/
+
+
+
+/***********************************************************/
+
+
+
+/*** L I S T S ***/ 
+/*use in conjuction with sections if you want a more complex list*/
+
+
+
+ul.lotusList li.lotusSelected{background-color:#f0ebc7}
+
+
+
+/***********************************************************/
+
+
+
+/*** M E N U ***/
+/*this is the green menu found at the top of the left column*/
+/*this menu is set up to allow for rounded corners in all browsers and is a set width*/
+
+
+
+.lotusMenu, .portlet-menu{background-color:#eefee1;border-color:#ccebb5;}
+.lotusMenu .lotusMenuSection{border-color:#ccebb5;}
+.lotusMenu li a, .lotusMenu li a:visited, .portlet-menu li a, .portlet-menu li a:visited{color:#105cb6}
+.lotusMenu li.lotusSelected a, .lotusMenu li.lotusSelected a:visited, .lotusMenu li.lotusSelected a:active, .portlet-menu li.lotusSelected a, .portlet-menu li.lotusSelected a:visited, .portlet-menu li.lotusSelected a:active, .lotusMenu h3.lotusSelected, .portlet-menu h3.lotusSelected{background-color:#73be59;border-color:#73be59;}
+.lotusMenu .lotusAction{margin-left:auto;float:right}
+
+                                                                                                                      
+
+/***********************************************************/
+
+
+
+/*** M E S S A G E S ***/
+/*these are the yellow warning/error messages that show up at the top of the content area*/
+
+
+
+.lotusMessage{background-color:#fcc;border-color:#c66;}/* use msgError16.png*/
+.lotusWarning{background-color:#ffffbc;border-color:#f7c455;}/*use msgWarning16.png*/
+.lotusInfo{background-color:#d8eaff;border-color:#6295d6;}/*use msgInfo16.png*/
+.lotusConfirm{background-color:#dcfcc4;border-color:#80d047;}/*use msgConfirmation16.png*/
+
+
+
+/***********************************************************/
+
+
+
+/*** P A G I N G ***/
+/*these are the page bars at the top and bottom of a table/list of entries*/
+
+
+
+.lotusPaging{background-color:#f1f3f5;border-width:0}
+.lotusPaging, .lotusPaging ul li, .lotusPaging div, .lotusPaging input{color:#848484;}
+.lotusPaging, .lotusPaging .lotusInlinelist li{border-color:#8d8d8d;}
+
+
+
+/***********************************************************/
+
+
+
+/*** P A L E T T E ***/
+/*this is the palette that opens under the place bar to allow users to customize the UI */
+
+
+
+.lotusPaletteHeader .lotusTabs li.lotusSelected a, 
+.lotusPaletteHeader .lotusTabs li.lotusSelected a:visited, 
+.lotusPalette .lotusMenu li.lotusSelected, 
+.lotusPalette .lotusMenu li.lotusSelected a, 
+.lotusPalette .lotusMenu li.lotusSelected a:visited,
+.lotusPalette .lotusMenu li.lotusSelected a:active{background-color:#105cb6;}
+.lotusPaletteNav{background:transparent url(../themeImages/paletteNavShadow.png) right top repeat-y;border-right:0 solid transparent;}
+
+
+
+/***********************************************************/
+
+
+
+/*** S E A R C H ***/
+/*these styles support the search UI in the title bar*/
+
+
+
+.lotusSearch .lotusSearchButton{color:#ffffff;}
+.lotusSearch .lotusScope:hover, .lotusSearch .lotusScope:focus{background-color:#787252}
+.lotusSearch .lotusScope, .lotusSearch .lotusText, .lotusSearch .dijitTextBox, .lotusSearch .lotusBtnImg{border-color:#7a7e81}
+
+
+
+/***********************************************************/
+
+
+
+/*** S E A R C H   T A B ***/
+/*this is the UI for a search/find control that hides the input fields until the user opens them*/
+/*this must be inside a relatively positioned div - override default positioning in the code, if necessary*/
+
+
+
+.lotusSearchForm .lotusSearchButton{color:#ffffff;}
+.lotusSearchTab a, .lotusSearchTab a:visited, .lotusSearchTab a:hover, .lotusSearchTab a:focus, .lotusSearchTab a:active{color:#000;}
+
+/***********************************************************/
+
+
+
+/*S E C T I O N */
+/*this is used to space out different elements in all three columns*/
+/*a section contains a header*/
+
+
+
+/****************************************************************/
+
+
+
+/*** S O R T ***/
+/*these are for the sort controls found at the top of a table/list of entries*/
+
+/****************************************************************/
+
+
+
+/*** T A B L E S ***/
+/*layout table*/
+/*note, if you need to use the structure of a relative div containing an absolute div within a layout table, be aware that Safari will only show the portion of your absolute div that is within the table area.  This is by design.*/
+/*there is no cellpadding built into these tables. Used judiciously for complex layouts.*/
+/*using child descenders to scope styles only to the layout table and not any nested tables*/
+
+
+
+.lotusTable .lotusAltRow td, .lotusTable .lotusAltRow th.lotusRowHeader, .lotusTable th.lotusAltCell, .lotusTable td.lotusAltCell{background-color:#f8f8f8;}
+.lotusTable td, .lotusTable th.lotusRowHeader, .lotusTable th.lotusSubHeader, .lotusTable .lotusLast td, .lotusTable .lotusLast th.lotusRowHeader{border-color:#e5e5e5}
+.lotusTable{border-bottom-color:#e5e5e5;}
+.lotusTable caption, .portlet-table caption{background-color:#f3f3f3;border-color:#e0e0e0;}
+.lotusTable .lotusPaging td, .portlet-table .lotusPaging td{border-color:#e0e0e0;}
+.lotusTable h5{color:#4f9815}
+.lotusInfoTable{background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -450px;background-repeat:repeat-x;}
+.lotusInfoTable h2{color:#73BE59;}
+
+
+
+/****************************************************************/
+
+
+
+/*** T A B S ***/
+/*tabs are used in content area and titlebar.  The style adjustments needed for the titlebar are grouped with the titleBar styles*/
+
+
+
+.lotusTabContainer{border-bottom-color:#d9d9d9}
+.lotusTabs li, .portlet-tab li{border-color:#e7e9ea;border-bottom-color:#d9d9d9;background-color:#e7e9ea}
+
+
+
+/****************************************************************/
+
+
+/*** T A G   C L O U D ***/
+/*a tag cloud is a visual way of displaying the relative importance of tags, with lotusF1 being of least importance and lotusF5 being most important*/
+
+
+
+a.lotusF5, a.lotusF5:visited{color:#1c3052}
+a.lotusF4, a.lotusF4:visited{color:#2b588e}
+a.lotusF3, a.lotusF3:visited{color:#4477bb}
+a.lotusF2, a.lotusF2:visited{color:#649cd8}
+a.lotusF1, a.lotusF1:visited{color:#8bbce8}
+
+/***********************************************************/
+
+
+
+/*** T R E E ***/ /*needs review - need additional tree visuals from Jason*/
+
+/***********************************************************/
+
+
+
+
+/*** V C A R D (P E R S O N   C A R D)***/
+/*this is the popup person card that shows up when you click on a person link (via a hover link)*/
+
+
+
+.lotusVCard a:link, .lotusVCard a:visited, .lotusVCard a:hover, .lotusVCard a:focus, a:active{color:#105cb6}
+.lotusVCard .lotusAppLinks td{background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -900px;}
+.lotusVCard .lotusActionMenu a, .lotusActionMenu a:visited{color:#000}
+.lotusVCard .lotusActionMenu a:hover, .lotusVCard .lotusActionMenu a:focus, .lotusVCard .lotusActionMenu a:active{color:#fff !important;background-color:#787252;}
+
+/***********************************************************/
+
+/*** V C A R D   H O V E R ***/
+/*this is the hover link that shows when you hover over a person's name and allows you to open their profile card*/
+
+/***********************************************************/
+
+
+/*** W I D G E T ***/
+
+
+
+.lotusWidget2{border-color:#e8ecee;}
+.lotusWidget2 h2{border-color:#e8ecee;background-color:#E8ECEE;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -900px;}
+.lotusWidgetPlain h2{border-width:1px 1px 0 1px}
+.lotusWidget2 h3, .lotusWidget2 .lotusWidgetFooter{border-color:#e8ecee;}
+
+
+
+/***********************************************************/
+
+

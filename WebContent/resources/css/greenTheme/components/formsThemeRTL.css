@@ -1,0 +1,31 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for forms
+companion files: forms.css / formsTheme.css
+companion files: formsRTL.css / formsThemeRTL.css*/
+/*** F O R M S ***/
+/*these styles are for inline and popup forms*/
+/*new, div-based form, labels on top*/
+
+
+
+.lotusForm2{background-color:#f1f9f3;}
+.lotusFieldBorder{background-color:#E9E9E9;}
+.lotusForm2 .lotusFormFooter {background-color:#e2f1e3;}
+.lotusForm2 input.lotusFormButton, .lotusForm2 button.lotusFormButton{border-color:#66ad69}
+
+
+
+
+
+.lotusFormTable, .lotusFormTable td{background-color:#f1f9f3;}
+.lotusForm .lotusFieldBorder{background-color:#E9E9E9;}
+.lotusFormTable .lotusFormFooter {background-color:#e2f1e3;}
+.lotusForm input.lotusFormButton, .lotusForm button.lotusFormButton{border-color:#66ad69}
+
+
+
+/***********************************************************/
+

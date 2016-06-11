@@ -1,0 +1,24 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for sort
+companion files: sort.css / sortTheme.css
+companion files: sortRTL.css / sortThemeRTL.css*/
+/*** S O R T ***/
+/*these are for the sort controls found at the top of a table/list of entries*/
+
+.lotusSort{margin:3px 10px;font-size:.9em}
+.lotusSort .lotusInlinelist li{padding:2px 5px}
+.lotusSort .lotusInlinelist li.lotusFirst{padding-right:0}
+.lotusSort a{padding:0;background-repeat:no-repeat;display:-moz-inline-box/*for FF2*/;display:inline-block;vertical-align:middle}
+a.lotusMoreSorts{padding-left:8px;}
+a.lotusActiveSort{text-decoration:none}
+.lotusSort .lotusAscending, .lotusSort .lotusDescending{padding-left:10px;}
+.lotusImagesOff .lotusSort .lotusAscending, .lotusImagesOff .lotusSort .lotusDescending{padding-left:0}
+.lotusSort .lotusAscending{background-image:url(../../images/lotusSprite-8bit.png);background-position:0 -5819px}
+.lotusSort .lotusDescending{background-image:url(../../images/lotusSprite-8bit.png);background-position:0 -5909px}
+.lotusSort a.lotusMoreSorts{background-image:url(../../images/lotusSprite-8bit.png);background-position:0 -721px}
+
+/****************************************************************/
+

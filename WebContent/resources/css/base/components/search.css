@@ -1,0 +1,36 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+these are the styles for search
+companion files: search.css / searchTheme.css
+companion files: searchRTL.css / searchThemeRTL.css*/
+/*** S E A R C H ***/
+/*these styles support the search UI in the title bar*/
+
+.lotusSearch form{margin:0;padding:0}/*ie6 fix*/
+.lotusSearch .lotusText, .lotusSearch .dijitTextBox{vertical-align:top;border:1px solid #aaa;background-color:#fff}
+.lotusSearch .lotusText, .lotusSearch .lotusScope{margin:0 1px;}
+.lotusSearch .lotusText{padding:2px 5px;width:11em;zoom:1;}
+.lotusSearch .lotusScope{padding:2px 25px 2px 4px;position:relative;display:block/*Force FF2 into block mode*/;display:inline-block;min-width:11em;height:1.33em;white-space:nowrap;line-height:1.33em;background:#fff url(../../images/lotusSprite-8bit.png) 100% -893px no-repeat;text-decoration:none;cursor:pointer;color:#000;border:1px solid #aaa;}
+.lotusSearch .lotusScope:visited, .lotusSearch .lotusScope:hover, .lotusSearch .lotusScope:focus, .lotusSearch .lotusScope:active{text-decoration:none}
+.lotusSearch .lotusScope:hover, .lotusSearch .lotusScope:focus{color:#fff;background-color:#595b5d;background-image:url(../../images/lotusSprite-8bit.png);background-position:100% -981px;background-repeat:no-repeat}
+.lotusSearch .lotusScope .lotusIcon{margin-right:3px;vertical-align:top}
+.lotusui_ie .lotusSearch .lotusScope{margin-top:1px}
+/*min-width not working in these cases*/
+.lotusui_ie6 .lotusSearch .lotusScope{width:11em;}
+.lotusui_ie7 .lotusSearch .lotusScope{min-width:0}
+.lotusui_ie7 .lotusSearch .lotusScope span{min-width:0}
+/*high contrast mode*/
+.lotusSearch .lotusScope .lotusAltText{position:absolute;top:0;right:0;width:16px;height:16px;min-width:0;background-image:none;display:none}
+.lotusImagesOff .lotusSearch .lotusScope .lotusAltText{display:block}
+/*.lotusImagesOff .lotusSearch .lotusScope span{padding:2px 0 2px 5px}*/
+.lotusSearch .lotusBtnImg{padding:2px;display:-moz-inline-box;display:inline-block;vertical-align:middle;}/*wrapper for image button*/
+.lotusSearch .lotusSearchButton{background-color:transparent;background-image:url(../../images/lotusSprite-8bit.png);background-position:0 -2913px;}/*image button*/
+
+
+
+
+
+/***********************************************************/
+

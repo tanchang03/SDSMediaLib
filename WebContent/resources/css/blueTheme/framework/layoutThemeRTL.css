@@ -1,0 +1,142 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+this file contains layout elements and style overrides for base components
+these styles need to be applied after the component styles
+companion files: layout.css / layoutTheme.css
+companion files: layoutRTL.css / layoutThemeRTL.css*/
+/*******************************************/
+/*** P A G E   L A Y O U T   S T Y L E S ***/
+/*******************************************/
+
+
+
+body.lotusui {color:#222;background-color:#cee1fc;}
+
+
+
+
+
+/*** B A N N E R **/
+/*this is the very top of the UI, that contains the logo, application links, user name, login/logout*/
+
+
+
+.lotusBanner ul.lotusInlinelist li{border-width:0}
+.lotusBanner ul.lotusUtility a, .lotusBanner ul.lotusUtility a:visited, .lotusBanner ul.lotusUtility a:active, .lotusBanner ul.lotusUtility a:hover{color:#105cb6}
+.lotusBanner ul.lotusLinks a, .lotusBanner ul.lotusLinks a:visited, .lotusBanner ul.lotusLinks a:active, .lotusBanner ul.lotusLinks a:hover{color:#105cb6}
+.lotusBanner ul.lotusLinks li.lotusSelected{background-color:#649De1;}
+
+
+
+.lotusBanner{background-color:transparent;}
+.lotusBanner ul.lotusLinks li.lotusSelected a, .lotusBanner ul.lotusLinks li.lotusSelected a:hover, .lotusBanner ul.lotusLinks li.lotusSelected a:visited, .lotusBanner ul.lotusLinks li.lotusSelected a:active{text-decoration:none;color:#fff}
+/*fixes IE6 alignment issues, now that we have arrow icons in some of the items*/
+.lotusui_ie6 .lotusBanner{padding-top:8px;padding-bottom:2px}
+.lotusui_ie .lotusBanner ul.lotusInlinelist li a, .lotusui_ie .lotusBanner ul li span.lotusUser{line-height:1em;}
+
+
+
+
+/***********************************************************/
+
+
+/*****************************/
+/*** N A V I G A T I O N   M E N U ***/
+/*****************************/
+
+
+
+.lotusNavMenu{border-color:#6794cb}
+
+
+
+/***********************************************************/
+
+
+
+/*** F O O T E R ***/
+/*this sits at the bottom of the UI and contains a lot of support links, like help and about*/
+
+
+
+/***********************************************************/
+
+
+
+
+
+
+/***********************************************************/
+
+
+/*** P L A C E   B A R ***/
+/*this place bar shows up right below the title bar and tells user what place or community they are in*/
+
+
+
+.lotusPlaceBar{background-color:#e4e8ef;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -900px}
+
+
+
+/***********************************************************/
+
+
+
+
+/*** T I T L E   B A R 	***/
+/*the blue bar under the , that contains tabs and search UI*/
+
+
+
+.lotusTitleBar{background-color:#4586d3;background-image:url(../themeImages/lotusThemeSprite-8bit.png);background-position:0 -1800px;border-bottom-color:#6794cb;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0}
+.lotusTitleBar .lotusRightCorner{padding-left:6px;background-image:url(../themeImages/titlebarLeft.png);background-position:left top;background-repeat:no-repeat}
+.lotusTitleBar .lotusInner{background-image:url(../themeImages/titlebarRight.png);background-position:right top;background-repeat:no-repeat}
+.lotusTitleBar .lotusSearch .lotusText, .lotusTitleBar .lotusSearch .lotusScope, .lotusTitleBar .lotusSearch .lotusBtnImg, .lotusTitleBar .lotusTabs li{border-color:#4675AD;}
+.lotusTitleBar .lotusTabs li{border-bottom-color:#6794cb;background-color:#4372A9}
+.lotusTitleBar .lotusTabs li.lotusSelected{border-color:#4675AD;border-bottom-color:#fff;}
+
+
+
+/***********************************************************/
+
+
+
+/*************************************/
+/*** S P E C I A L   S C R E E N S ***/
+/*************************************/
+
+
+
+
+.lotusAbout .lotusAboutBox{background-color:#e8f0fb;border:1px solid #d1e0f7}
+
+
+
+
+/*** L O G I N ***/
+/*this can appear on a plain connections page (gradient background only), or launched in a separate window*/
+
+
+
+.lotusLogin2 .lotusForm2{background-color:transparent}
+
+/***********************************************************/
+
+
+
+
+
+.lotusMetrics dt{background-color:#eee;border-width:0}
+
+
+
+
+
+.lotusWelcomeBox{background-color:#e8f0fb;border-color:#d1e0f7}
+
+
+
+
+

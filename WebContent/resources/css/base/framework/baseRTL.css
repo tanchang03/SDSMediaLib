@@ -1,0 +1,158 @@
+/*! Licensed Materials - Property of IBM.
+    (c) Copyright IBM Corporation 2001, 2009.  All Rights Reserved.
+    U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+This CSS was built on April 30 2010. (version: OneUI-2.1.0_149_20100430-1512)
+this file contains contains namespaced default styles
+companion files: base.css / baseTheme.css
+companion files: baseRTL.css / baseThemeRTL.css*/
+/******************************/
+/*** B A S E   S T Y L E S ****/
+/******************************/
+
+/* Version number encoded into a style.  Numbers are: MajorVersion MinorVersion MilliVersion MicroVersion */
+.lotusVersion{margin:2px 1px 0px 149px !important}
+
+/*** R E S E T ***/
+/*reset styles, to get rid of browser-specific styling of elements and to set our own defaults - to pick up these styles, put "lotusui" on a container - either the body tag or a div that contains content (you can have more than one lotusui container on a page).  Note, the font size will inherit the page font size.*/
+body.lotusui{margin:0;padding:0;font:75%/1.5em Arial, Helvetica, sans-serif;direction:rtl;}
+.lotusui_ie7 body.lotusui{position:relative}/*fix for IE7, to keep relatively positioned children looking okay.*/
+body.lotusJapanese, .lotusui .lotusJapanese *{font-family:"MS UI Gothic","MS PGothic", "Apple Gothic", Arial, Helvetica, sans-serif}
+/*internal link (default link style)*/
+.lotusui a, .lotusui a:visited{text-decoration:none;color:#105cb6}/*takes care of normal and visited links*/
+.lotusui a:hover, .lotusui a:focus, .lotusui a:active{text-decoration:underline;color:#05386b}
+/*the following headers are used to give heirarchy to the page*/
+/*the sizes of the headers are set to support our visual styles*/
+/*some header styles are also reset within certain components or sections of the page*/
+.lotusui h1{margin:0;padding:0;font-size:1.7em;font-weight:normal;line-height:1.2em;color:#444}/*page header*/
+.lotusui h2{margin:0;padding:0;font-size:1.2em;font-weight:bold;color:#444}/*section headers*/
+.lotusui h3{margin:0;padding:0;font-size:1.1em;font-weight:bold}/*subsection headers*/
+.lotusui h4{margin:0;padding:0;font-size:1.2em;font-weight:bold}/*entry titles*/	
+.lotusui h5{margin:0;padding:0;font-size:1.1em;font-weight:bold}/*entry details sections*/
+.lotusui img{border:0;vertical-align:middle}
+.lotusui input.lotusCheckbox{margin-right:0;margin-left:3px}/*for checkboxes and radio buttons*/
+.lotusui button, .lotusui input, .lotusui select{font-family:Arial, Helvetica, sans-serif;font-size:1em/*needed for safari*/}
+.lotusJapanese button, .lotusJapanese input, .lotusJapanese select{font-family:"MS UI Gothic","MS PGothic", "Apple Gothic", Arial, Helvetica, sans-serif}
+.lotusui textarea{padding:1px 0;margin:1px 0;font:normal 1em/1.2em Arial, Helvetica, sans-serif;}
+.lotusui p{margin:5px 0 0 0}
+.lotusui pre{font-family:"Courier New", Courier, monospace;} /*this helps eliminate discrepencies for how this displays cross-browser*/
+/***********************************************************/
+
+
+
+/*** S P E C I A L   L I N K S ***/
+/*tag*/
+.lotusRelatedTags a{background-repeat:no-repeat;padding-right:10px;display:inline-block;background-image:url(../../images/lotusSprite-8bit.png);background-position:100% -2860px;}
+.lotusPersonInactive a, .lotusPersonInactive a:visited, .lotusPersonInactive a:hover, .lotusPersonInactive a:focus, .lotusPersonInactive a:active, a.lotusPersonInactive, a.lotusPersonInactive:visited, a.lotusPersonInactive:hover, a.lotusPersonInactive:focus, a.lotusPersonInactive:active{color:#999 !important;font-style:italic;text-decoration:none}
+.lotusTagBin {margin-top:10px;}
+/*single and group action links*/
+/*this is to provide a class for overriding link colors in groups of links to indicate that the link is an action link (like the "Tag this" link in a tag group*/
+a.lotusAction, a.lotusAction:visited{font-size:.9em}
+.lotusActions{font-size:.9em}/*used on an outer container containing multiple action links (and possibly plain text mixed in, like View: tags | list | all)*/
+.lotusActions .lotusAction, .lotusui .lotusTiny a.lotusAction, .lotusui .lotusTiny .lotusAction, .lotusui .lotusAction .lotusTiny{font-size:1em}/*only want to reduce the size once*/
+/*to assign an icon to an action link, you need to assign a unique id to the link and give it a background image.  The rest of the code is in this css declaration*/
+a.lotusDropDown, a.lotusDropDown:visited, a.lotusDropDown:active{padding-left:14px;background-position:left center ;background-repeat:no-repeat;background-color:transparent;background-image: url(../../images/lotusSprite-8bit.png);background-position:0 -728px}
+.lotusIcon a{padding-right:18px;background-repeat:no-repeat}
+.lotusDelete{background-repeat:no-repeat;zoom:1} /*delete icon with rollover state;zoom needed for opacity trick in IE*/
+a.lotusDelete img{width:12px;height:12px;background-image:url(../../images/lotusSprite-8bit.png);background-position:0 -2319px;opacity:0.25;filter:alpha(opacity=25);}
+a.lotusDelete:hover img, a.lotusDelete:focus img, a.lotusDelete:active img{opacity:0.40;filter:alpha(opacity=40);}
+/*this is an alternate version of lotusDelete, where the class needs to be on the image because the link has text in it (like in filters)*/
+img.lotusDelete{width:8px;height:8px;background-image:url(../../images/lotusSprite-8bit.png);background-position:-2px -2321px;opacity:0.25;filter:alpha(opacity=25)}
+a:hover img.lotusDelete, a:focus img.lotusDelete, a:active img.lotusDelete{opacity:0.40;filter:alpha(opacity=40);}
+/*general class for 16 pixel icons created as background images, where a link surrounds blank.gif*/
+/*NOTES: 
+- the image tag of blank.gif contains alt text that will show when images are turned off.  It also needs to set the width and the height
+- any hover text is put on the title text of the link
+- an additional class is used to assign the icon image.  These are defined in baseTheme.css and are named to match the icon graphic name with a lotus prefix
+in the future this can be modified to use an icon sprite graphic*/
+.lotusui .lotusIcon16{width:16px;height:16px;background-repeat:no-repeat;background-image:url(../../images/lotusSprite-8bit.png);}
+.lotusui .lotusIconShow{background-position:0 -2969px}
+.lotusui .lotusIconHide{background-position:0 -2483px}
+/***********************************************************/
+
+
+
+/*** G E N E R A L   S T Y L E S ***/
+.lotusui .lotusAccess{position:absolute;top:-3000px;width:500px;}
+.lotusui .lotusAlignRight{text-align:left;}
+.lotusui .lotusAlignLeft{text-align:right;}
+.lotusui .lotusBig{font-size:1.1em}/*bumps up the font size*/
+.lotusui .lotusBold{font-weight:bold}
+.lotusui .lotusBorderTop{border-top:1px solid #e5e5e5}
+.lotusui .lotusBorderBottom{border-bottom:1px solid #e5e5e5}
+.lotusBreakWord {word-wrap: break-word;}/*use this and the following 2 styles to allow long content to wrap*/
+.lotusui_ie6 .lotusBreakWord {word-break: break-all;}
+.lotusui_ie7 .lotusBreakWord {word-break: break-all;}
+.lotusui .lotusCenter{text-align:center;}
+.lotusui .lotusClear{clear:both}
+.lotusui .lotusClearLeft{clear:right}
+.lotusui .lotusClearRight{clear:left}
+.lotusui .lotusDraggable{cursor:move}
+.lotusui .lotusEllipsis{white-space:nowrap;width:90%;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;-ms-text-overflow:ellipsis;}
+.lotusui .lotusFixedTable{table-layout:fixed;}/* Fix for forms issues with typeahead. For IE6 and IE7 */
+.lotusui .lotusHidden{display:none} /*hides from visual UI but not from screen readers*/
+.lotusui .lotusHideOverflow{overflow:hidden}/*use in conjunction with a width on your element*/
+.lotusui .lotusIndent10{padding-right:10px;}
+.lotusui .lotusIndent15{padding-right:15px;}
+.lotusui .lotusIndent20{padding-right:20px}
+.lotusui .lotusIndent40{padding-right:40px;}
+.lotusui .lotusIndent60{padding-right:60px;}
+.lotusui .lotusChunk{margin-top:5px;clear:both;zoom:1}
+.lotusui .lotusChunk10{margin-top:10px;clear:both;zoom:1}
+.lotusui .lotusChunk15{margin-top:15px;clear:both;zoom:1}
+.lotusui .lotusChunk20{margin-top:20px;clear:both;zoom:1}
+.lotusui .lotusHighlighted{color:#f00}/*red*/
+.lotusui .lotusInactive{color:#999}
+.lotusui .lotusItalic{font-style:italic}
+.lotusui .lotusLeft{float:right;text-align:right;}
+.lotusui .lotusLoading{background-image:url(../../images/loading.gif);background-repeat:no-repeat;width:16px;height:16px}/*loading animated gif*/
+ /* override this style to specify your logo image */
+ .lotusui .lotusLogo, .lotusLoginLogo{background-repeat:no-repeat}
+.lotusImagesOff .lotusLogo, .lotusImagesOff .lotusLoginLogo{width:auto !important;white-space:nowrap}
+.lotusui .lotusLTR{direction:ltr}/*allows you to assign an element to always read LTR*/
+/*.lotusui .lotusMeta{font-size:.9em}*/
+.lotusui .lotusMeta{color:#666}
+.lotusui .lotusNowrap{white-space:nowrap}
+.lotusui .lotusNudge{} /*use this general class name with specific qualifiers when you need to adjust the position of a specific item (see entry class in this stylesheet for an example)*/
+.lotusui .lotusOffScreen{position:absolute;top:-9999px}/*for positioning elements offscreen, like text to be read by screenreaders*/
+.lotusui .lotusRequired{color:#efa229}
+.lotusui .lotusRight{float:left;text-align:left;}
+.lotusui .lotusRTL{direction:rtl}/*allows you to assign an element to always read RTL*/
+.lotusui .lotusShadow{box-shadow:0px 2px 5px #eee;-webkit-box-shadow:0 2px 5px #eee;-moz-box-shadow:0 2px 5px #eee}/*adds a drop shadow to an element*/
+.lotusui .lotusTiny{font-size:.9em}
+/*the next two lines are for providing alternate text for background images when images are turned off - requires javascript to test for this and assign the lotusImagesOff class to the html tag*/
+.lotusui .lotusAltText{display:none}
+.lotusImagesOff .lotusAltText{display:inline}
+
+.lotusui .lotusIBMLogo {width:82px;height:30px;background-image:url(../../images/lotusSprite-8bit.png);background-position:0 -1782px;background-repeat:no-repeat;}
+.lotusImagesOff .lotusIBMLogo {display:none}
+.lotusui .lotusIBMLogoFooter {width:63px;height:23px;background-image:url(../../images/lotusSprite-8bit.png);background-position:0 -1852px;background-repeat:no-repeat;}
+.lotusImagesOff .lotusIBMLogoFooter {display:none}
+/***********************************************************/
+
+/*** I N L I N E   L I S T S ***/ 
+/*to make a list display horizontally*/
+.lotusui .lotusInlinelist{margin:0;padding:0;list-style-type:none}
+.lotusui .lotusInlinelist li{display:-moz-inline-box/*for FF2*/;display:inline-block;margin:0;padding:0 7px;border-right:1px solid #ccc;vertical-align:middle}
+.lotusInlinelist li a, .lotusInlinelist li span{display:-moz-inline-box/*for FF2*/;display:inline-block;}
+.lotusui .lotusInlinelist li.lotusFirst, .lotusui .lotusInlinelist li.lotusLast{padding-right:0;border-right-width:0;}
+.lotusui .lotusNoDivider li{border-right-width:0}
+/*the next two lines are needed to fix text zoom for inline lists in IE7 (also fixes RTL display issues)*/
+.lotusui_ie7 .lotusInlinelist li{display:inline-block}
+.lotusui_ie7 .lotusInlinelist li, .lotusui_ie6 .lotusInlinelist li{display:inline}
+/***********************************************************/
+
+/*** A R R O W S ***/
+.lotusui .lotusArrow{background-image:url(../../images/lotusSprite-8bit.png)}
+.lotusui .lotusArrow{margin-left:2px;width:13px;height:18px;float:right;display:block;background-repeat:no-repeat}
+.lotusui .lotusArrow:visited, .lotusui .lotusArrow:hover, .lotusui .lotusArrow:focus, .lotusui .lotusArrow:active{text-decoration:none}
+/*twisty arrow definitions are found in section and menu components*/
+/*drop-down arrows (assign as an additional class along with lotusSprite and lotusArrow)*/
+.lotusui .lotusDropDownSprite, .lotusui .lotusDropDownActionSprite{margin-left:0;padding:1px;width:5px;height:3px;display:-moz-inline-box;display:inline-block;float:none;text-decoration:none}
+.lotusui .lotusDropDownSprite{background-position:0 -728px}
+.lotusui .lotusDropDownActionSprite{background-position:0 -814px}
+/*scroll arrows (assign as an additional class along with lotusSprite and lotusArrow)*/
+.lotusui .lotusScrollUp, .lotusui .lotusScrollDown{float:none;line-height:1em;width:9px;height:5px;margin:0;text-decoration:none !important}
+.lotusui .lotusScrollUp{background-position:0 -683px}
+.lotusui .lotusScrollDown{background-position:0 -638px}
+
+
